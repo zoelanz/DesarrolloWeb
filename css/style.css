@@ -481,19 +481,6 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------PAGINA MEDICINA CHINA---------------------------------------------------------------*/
 
 .mainmedicinachinaterapias {
@@ -660,7 +647,7 @@ a:hover {
 }
 
 .cajaflores__texto {
-    background-color: rgb(180, 156, 156);
+    background-color: rgb(144, 148, 168);
     width: 50%;
     height: 500px;
     overflow: auto;
@@ -685,7 +672,7 @@ a:hover {
 }
 
 .masajesonoro__texto {
-    background-color: rgb(180, 156, 156);
+    background-color: rgb(144, 148, 168);
     width: 50%;
     height: 500px;
     overflow: auto;
@@ -875,7 +862,6 @@ a:hover {
 
 .cajaform {
     padding-top: 15px;
-    background-color: rgb(207, 206, 124);
     background-image: url(../imagenes/fondoabs5.jpg);
     background-position: center;
     width: 80%;
@@ -940,10 +926,9 @@ a:hover {
 }
 
 .redesydatos {
-    /* background-color: rgb(201, 194, 174); */
-    background-color: rgb(156, 162, 170);
-    width: 750px;
-    height: 450px;
+    background-color: rgb(144, 148, 168);
+    width: 650px;
+    height: 350px;
     padding: 20px;
     text-align: center;
     margin-top: 70px;
@@ -978,7 +963,7 @@ a:hover {
 }
 
 .redesydatos__p1 {
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-family: 'Jost', sans-serif;
     color: black;
     font-weight: bolder;
     font-size: 15px;
@@ -986,9 +971,19 @@ a:hover {
 }
 
 .redesydatos__p2 {
-    font-size: 14px;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+   
+}
+
+.parrafomensaje{
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
     letter-spacing: 2px;
     line-height: 25px;
+   
+
 }
 
 /* ------------------------------------------------------------------FOOTER---------------------------------------------------------------------*/
