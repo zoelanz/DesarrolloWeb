@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&family=Jost:wght@300&family=Poiret+One&family=Sawarabi+Gothic&family=Zen+Kaku+Gothic+Antique&display=swap');
 
-
 /* -----------------------------------------------------PROPIEDADES GENERALES--------------------------------------------------------------------*/
 
 body {
@@ -8,9 +7,7 @@ body {
 }
 
 .contenedorh1 {
-
     text-align: center;
-
     grid-row: 1/2;
     grid-column: 2/3;
 }
@@ -19,11 +16,7 @@ h1 {
     font-size: 18px;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     letter-spacing: 3px;
-
-
-
 }
-
 
 .contenedor {
     width: 100%;
@@ -46,9 +39,6 @@ header {
 .header__logo {
     justify-content: center;
     margin: 10px;
-
-
-
 }
 
 .tamañologo {
@@ -62,10 +52,7 @@ header {
     justify-content: center;
     align-content: center;
     width: 100%;
-
 }
-
-
 
 nav {
     height: min-content;
@@ -73,13 +60,11 @@ nav {
     justify-content: center;
     align-content: center;
     text-align: center;
-
 }
 
 nav ul {
     padding: 0;
     margin: 0;
-
 }
 
 nav ul li {
@@ -108,6 +93,7 @@ a:hover {
 }
 
 /* ------------------------------------------------------------------MEDIA QUERIES GENERALES---------------------------------------------------------------------*/
+
 @media only screen and (max-width: 1060px) {
 
     header {
@@ -118,10 +104,7 @@ a:hover {
 
     nav {
         margin-left: 0;
-
     }
-
-
 
     h1 {
         margin-left: 0;
@@ -132,15 +115,10 @@ a:hover {
     nav ul li a {
         font-size: 15px;
         padding: 5px;
-
     }
-
-
-
 }
 
-@media only screen and (max-width: 700px) {
-
+@media only screen and (max-width:700px) {
     h1 {
         font-size: 15px;
         margin-top: 10px;
@@ -148,13 +126,10 @@ a:hover {
 
     nav ul li a {
         font-size: 12px;
-
-
     }
 
     nav ul li {
         line-height: 1px;
-
     }
 
     .header__logo {
@@ -165,16 +140,11 @@ a:hover {
         width: 60px;
         height: 60px;
     }
-
-
-
-
 }
 
 /* ------------------------------------------------------------------PAGINA INICIO---------------------------------------------------------------------*/
 
 .mainIndex {
-
     background-color: rgb(219, 212, 192);
     grid-row: 2/3;
     width: 100%;
@@ -219,8 +189,6 @@ a:hover {
     margin-bottom: 50px;
 }
 
-
-
 .botonconocemas {
     background-color: rgb(144, 148, 168);
     text-decoration: none;
@@ -254,7 +222,6 @@ a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
     overflow: visible;
-
 }
 
 .contenido2__titulo {
@@ -414,8 +381,7 @@ a:hover {
     grid-row: 2/3;
     display: flex;
     height: min-content;
-    margin-top: 100px;
-    background-color: rgb(207, 206, 124);
+    margin-top: 100px;  
 }
 
 .mainsobremi__imagen {
@@ -424,8 +390,6 @@ a:hover {
     background-image: url(../imagenes/imagenflor.jpg);
     background-size: cover;
     background-position: center;
-
-
 }
 
 .mainsobremi__texto {
@@ -462,7 +426,6 @@ a:hover {
 
     .mainsobremi__texto {
         width: 100vw;
-
         height: auto;
     }
 
@@ -470,16 +433,7 @@ a:hover {
         width: 100vw;
         height: 100vh;
     }
-
-
 }
-
-
-
-
-
-
-
 
 /* ------------------------------------------------------------------PAGINA MEDICINA CHINA---------------------------------------------------------------*/
 
@@ -493,7 +447,6 @@ a:hover {
 
 .cajaterapia {
     padding-top: 15px;
-    background-color: rgb(144, 148, 168);
     background-color: rgb(201, 194, 174);
     background-position: center;
 }
@@ -612,7 +565,6 @@ a:hover {
     background-color: rgb(144, 148, 168);
     width: 100vw;
     height: min-content;
-
 }
 
 .otrasterapias h2 {
@@ -629,7 +581,6 @@ a:hover {
     width: 100%;
     height: 500px;
     display: flex;
-
 }
 
 .cajaflores__imagen {
@@ -717,12 +668,10 @@ a:hover {
 
     .cajaflores__texto {
         width: 100%;
-
     }
 
     .cajaflores__imagen {
         width: 100%;
-
     }
 
     .masajesonoro__texto {
@@ -732,31 +681,16 @@ a:hover {
     .masajesonoro__imagen {
         width: 100%;
         background-position: bottom;
-
     }
 
     #seccionsonoro {
         flex-direction: column-reverse;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------------------------------------------------------------------GALERIA---------------------------------------------------------------------*/
 
 .mainGaleria {
-
     background-color: rgb(243, 239, 230);
     grid-row: 2/3;
     height: 600px;
@@ -798,7 +732,6 @@ a:hover {
     grid-area: item1;
     background-image: url(../imagenes/ventosas2.jpg);
 }
-
 
 .item2 {
     grid-area: item2;
@@ -867,10 +800,6 @@ a:hover {
     width: 95%;
     height: 500px;
     position: absolute;
- 
-    
-    
-    
 }
 
 .cajaform h2 {
@@ -883,8 +812,6 @@ a:hover {
     padding-top: 20px;
     padding-bottom: 10px;
     margin-left: 145px;
-    
-   
 }
 
 .cajaform input {
@@ -897,28 +824,14 @@ a:hover {
     padding-top: 35px;
     padding-bottom: 10px;
     margin-left: 20px;
-
-   
-  
-    
 }
 
-.forminput{
+.forminput {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid black;
     outline: none;
 }
-
-/* .cajaform label {
-    text-align: center;
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    color: black;
-    font-weight: bolder;
-    font-size: 14px;
-    letter-spacing: 2px;
-    margin-left: 20px;
-} */
 
 .cajaform .inputbotones {
     font-weight: bold;
@@ -929,10 +842,9 @@ a:hover {
     background-color: transparent;
     border: none;
     font-size: 12px;
-    
 }
 
-.inputbotones:hover{
+.inputbotones:hover {
     color: grey;
 }
 
@@ -948,13 +860,11 @@ a:hover {
     border: none;
     margin-left: 20px;
     border-bottom: 1px solid black;
-    
 }
 
 .redesydatos {
     background-color: rgb(199, 218, 154);
     opacity: 0.9;
-    
     width: 650px;
     height: 350px;
     padding: 20px;
@@ -1002,16 +912,13 @@ a:hover {
     font-family: 'Jost', sans-serif;
     font-size: 18px;
     letter-spacing: 2px;
-   
 }
 
-.parrafomensaje{
+.parrafomensaje {
     font-family: 'Jost', sans-serif;
     font-size: 18px;
     letter-spacing: 2px;
     line-height: 25px;
-   
-
 }
 
 /* ------------------------------------------------------------------FOOTER---------------------------------------------------------------------*/
@@ -1023,8 +930,6 @@ footer {
     flex-direction: column;
     z-index: 20;
     height: 110px;
-
-
 }
 
 .contenedorFooter__boton {
