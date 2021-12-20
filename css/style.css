@@ -791,7 +791,7 @@ a:hover {
     transform: scale(1.2);
     z-index: 500;
     border: 2px solid rgb(152, 173, 184);
-    box-shadow: 2px 2px 10px white;
+    box-shadow: 4px 4px 10px white;
 }
 
 .item1 {
@@ -864,21 +864,27 @@ a:hover {
     padding-top: 15px;
     background-image: url(../imagenes/fondoabs5.jpg);
     background-position: center;
-    width: 80%;
+    width: 95%;
     height: 500px;
     position: absolute;
+ 
+    
+    
+    
 }
 
 .cajaform h2 {
-    text-align: center;
+    /* text-align: center; */
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 2px;
     margin-top: 0px;
     padding-top: 20px;
     padding-bottom: 10px;
-    border: none;
+    margin-left: 145px;
+    
+   
 }
 
 .cajaform input {
@@ -886,16 +892,25 @@ a:hover {
     text-align: center;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     color: black;
-    font-size: 16px;
+    font-size: 13px;
     letter-spacing: 2px;
-    padding-top: 10px;
+    padding-top: 35px;
     padding-bottom: 10px;
-    border: none;
     margin-left: 20px;
-    cursor: pointer;
+
+   
+  
+    
 }
 
-.cajaform label {
+.forminput{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+/* .cajaform label {
     text-align: center;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     color: black;
@@ -903,13 +918,22 @@ a:hover {
     font-size: 14px;
     letter-spacing: 2px;
     margin-left: 20px;
-}
+} */
 
 .cajaform .inputbotones {
-    font-weight: bolder;
-    width: 100px;
+    font-weight: bold;
+    width: 85px;
     margin-top: 20px;
     margin-left: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    
+}
+
+.inputbotones:hover{
+    color: grey;
 }
 
 .cajaform textarea {
@@ -917,16 +941,20 @@ a:hover {
     text-align: center;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     color: black;
-    font-size: 16px;
+    font-size: 13px;
     letter-spacing: 2px;
     padding-top: 10px;
     padding-bottom: 10px;
     border: none;
     margin-left: 20px;
+    border-bottom: 1px solid black;
+    
 }
 
 .redesydatos {
-    background-color: rgb(144, 148, 168);
+    background-color: rgb(199, 218, 154);
+    opacity: 0.9;
+    
     width: 650px;
     height: 350px;
     padding: 20px;
