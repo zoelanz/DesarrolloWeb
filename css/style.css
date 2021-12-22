@@ -381,7 +381,7 @@ a:hover {
     grid-row: 2/3;
     display: flex;
     height: min-content;
-    margin-top: 100px;  
+    margin-top: 100px;
 }
 
 .mainsobremi__imagen {
@@ -446,9 +446,18 @@ a:hover {
 }
 
 .cajaterapia {
-    padding-top: 15px;
+    padding: 2px;
     background-color: rgb(201, 194, 174);
     background-position: center;
+    height: min-content;
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 30px;
+}
+
+.contenidotextoimagen {
+    width: 100%;
+    height: min-content;
 }
 
 .mainmedicinachinaterapias h2 {
@@ -472,12 +481,14 @@ a:hover {
 
 .cajatextoimagen {
     width: 100%;
-    height: 600px;
+    height: min-content;
     display: flex;
+    flex-wrap: wrap;
+
 }
 
 .cajaimagenizquierda {
-    background-color: rgb(144, 148, 168);
+    display: flex;
     background-image: url(../imagenes/fondoabs5.jpg);
     background-size: cover;
     margin-top: 50px;
@@ -486,23 +497,33 @@ a:hover {
     z-index: 10;
 }
 
-.tamañoimagenizquierda {
-    margin-left: 20px;
-    width: 105%;
+
+.cajaimagenizquierda2 {
+    background-image: url(../imagenes/giphyguasha.gif);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     height: 400px;
+    margin-left: 20px;
 }
+
 
 .cajatextoderecha {
     background-color: rgb(144, 148, 168);
     width: 55%;
     height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+
 }
 
 .h3derecha {
     font-family: 'Encode Sans SC', sans-serif;
     color: black;
     font-size: 25px;
-    margin-top: 110px;
     text-align: center;
 }
 
@@ -514,8 +535,8 @@ a:hover {
     color: black;
     letter-spacing: 2px;
     word-spacing: 1px;
-    line-height: 30px;
-    padding: 0 80px 0 80px;
+    line-height: 45px;
+    padding: 0 20px 0 20px;
 }
 
 .cajatextoizquierda {
@@ -523,6 +544,12 @@ a:hover {
     width: 55%;
     height: 500px;
     margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+
 }
 
 .h3izquierda {
@@ -531,6 +558,7 @@ a:hover {
     font-size: 25px;
     margin-top: 110px;
     text-align: center;
+
 }
 
 .cajaimagenderecha {
@@ -539,12 +567,105 @@ a:hover {
     margin-top: 50px;
     width: 45%;
     height: 500px;
+    display: flex;
+    z-index: 10;
 }
 
-.tamañoimagenderecha {
-    margin-left: -50px;
-    width: 105%;
+.cajaimagenderecha2 {
+    background-image: url(../imagenes/giphyventosas.gif);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     height: 400px;
+    margin-right: 20px;
+}
+
+.cajaimagenizquierda3 {
+    background-image: url(../imagenes/giphyreflexologia.gif);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    margin-left: 20px;
+}
+
+.cajaimagenderecha3 {
+    background-image: url(../imagenes/giphyauriculoterapia.gif);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.cajaimagenizquierda4 {
+    background-image: url(../imagenes/giphyacupuntura.gif);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    margin-left: 20px;
+}
+
+.cajaimagenderecha4 {
+    background-image: url(../imagenes/giphymoxa.gif);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.cajaimagenizquierda5 {
+    background-image: url(../imagenes/giphyqigong.gif);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    margin-left: 20px;
+}
+
+/* -----------------------------------------------------------MEDIA QUERIES PAGINA MEDICINA CHINA---------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1060px) {
+    .mainmedicinachinaterapias {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .cajatextoimagen {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .cajaterapia {
+        margin-bottom: -30px;
+    }
+
+    .cajaimagenizquierda {
+        width: 100%;
+    }
+
+    .cajatextoderecha {
+        width: 100%;
+        height: min-content;
+    }
+
+    .cajatextoizquierda {
+
+        width: 100%;
+        height: min-content;
+    }
+
+    .medicinachinareverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .cajaimagenderecha {
+        width: 100%;
+    }
 }
 
 /* ------------------------------------------------------------------OTRAS TERAPIAS---------------------------------------------------------------------*/
@@ -656,7 +777,6 @@ a:hover {
     .mainotrasterapias {
         margin-top: 0px;
     }
-
 }
 
 @media only screen and (max-width: 950px) {
@@ -778,28 +898,80 @@ a:hover {
     background-image: url(../imagenes/acupuntura2.jpg);
 }
 
+/* ------------------------------------------------------------------MEDIA QUERIES PAGINA GALERIA---------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1000px) {
+
+    .contenedorGaleria {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+            "item1 item2 item3 "
+            " item4 item5 item6"
+            " item4 item5 item7"
+            " item8 item9 item10";
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 8px;
+        justify-content: center;
+        margin: 20px 0px 30px 0px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .contenedorGaleria {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+            "item1 item2"
+            "item3 item4"
+            "item5 item4"
+            "item5 item6"
+            "item7 item8"
+            "item9 item10"
+        ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 8px;
+        justify-content: center;
+        margin: 20px 0px 30px 0px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+
+    .mainGaleria {
+        margin-top: 0px;
+        padding: 0 20px 20px 20px;
+    }
+}
+
 /* ------------------------------------------------------------------CONTACTO---------------------------------------------------------------------*/
 
 .mainform {
     width: 100%;
     height: 600px;
-    position: relative;
     background-color: rgb(219, 212, 192);
     grid-row: 2/3;
     margin-top: 70px;
 }
 
 .contenedorformydatos {
+    background-image: url(../imagenes/fondoabs5.jpg);
+    background-position: center;
+    padding-top: 30px;
     display: flex;
+    height: 500px;
+    width: 100%;
 }
 
 .cajaform {
     padding-top: 15px;
-    background-image: url(../imagenes/fondoabs5.jpg);
-    background-position: center;
-    width: 95%;
+    width: min-content;
     height: 500px;
-    position: absolute;
+
 }
 
 .cajaform h2 {
@@ -865,14 +1037,13 @@ a:hover {
 .redesydatos {
     background-color: rgb(199, 218, 154);
     opacity: 0.9;
-    width: 650px;
-    height: 350px;
-    padding: 20px;
+    width: 50%;
+    height: min-content;
     text-align: center;
     margin-top: 70px;
     margin-right: 60px;
-    position: absolute;
-    margin-left: 550px;
+    margin-left: 200px;
+
 }
 
 .icono {
@@ -912,6 +1083,7 @@ a:hover {
     font-family: 'Jost', sans-serif;
     font-size: 18px;
     letter-spacing: 2px;
+
 }
 
 .parrafomensaje {
@@ -919,6 +1091,37 @@ a:hover {
     font-size: 18px;
     letter-spacing: 2px;
     line-height: 25px;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------MEDIA QUERIES PAGINA CONTACTO---------------------------------------------------------------------*/
+
+@media only screen and (max-width: 950px) {
+
+
+    .mainform {
+        margin-top: 0;
+        height: 740px;
+    }
+
+    .contenedorformydatos {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cajaform {
+        padding: 0;
+        margin-top: 230px;
+    }
+
+    .redesydatos {
+        width: 100%;
+        height: min-content;
+        justify-content: center;
+        margin: 0;
+    }
 }
 
 /* ------------------------------------------------------------------FOOTER---------------------------------------------------------------------*/
