@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FS Terapia en Medicina China</title>
     <link rel="LOGO ICON EN PESTAÑA" href="./imagenes/logopng.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -36,7 +37,8 @@
     <main class="mainIndex">
         <section>
             <div class="contenido">
-                <div class="contenido__texto">
+                <div  data-aos="zoom-in-down" data-aos-easing="ease-in"
+                data-aos-duration="1000" class="contenido__texto">
                     <h3 class="contenido__texto--titulo">Gua Sha</h3>
                     <p class="contenido__texto--parrafo">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, similique?
@@ -48,7 +50,8 @@
                         <a class="botonconocemas" href="./paginas/medicinachina.html">CONOCE MÁS </a>
                     </div>
                 </div>
-                <div class="contenido__imagen">
+                <div data-aos="zoom-in-down" data-aos-easing="ease-in"
+                data-aos-duration="1000" class="contenido__imagen">
                 </div>
             </div>
         </section>
@@ -88,6 +91,10 @@
         <span class="contenedorFooter__copyright">Copyright 2021. By Zetaele Coding</span>
         <img class="logofooter" src="./imagenes/logopng.png" alt="logo">
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

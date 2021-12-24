@@ -730,6 +730,10 @@ a:hover {
     color: black;
     font-size: 20px;
     text-align: center;
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-iteration-count: 6;
+
 }
 
 .cajaflores__texto p {
@@ -769,6 +773,9 @@ a:hover {
     width: 50%;
     height: 500px;
 }
+
+
+
 
 /* -----------------------------------------------------------MEDIA QUERIES OTRAS TERAPIAS---------------------------------------------------------------------*/
 
@@ -1186,3 +1193,21 @@ footer {
         margin-top: -80px;
     }
 }
+
+/* ------------------------------------------------------------------ANIMACIONES--------------------------------------------------------------------*/
+
+@keyframes aparecer {
+
+    0% {
+        transform: scale(1);
+}
+
+    50% {
+
+        transform: scale(1.1);
+}
+
+    100% {
+
+        transform: scale(1.2);
+    }
