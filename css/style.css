@@ -1234,6 +1234,11 @@ ul li a {
     color: black;
 }
 
+.navbar-toggler-icon{
+   background-color: rgb(144, 148, 168);
+   
+}
+
 .navbar {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-weight: bolder;
