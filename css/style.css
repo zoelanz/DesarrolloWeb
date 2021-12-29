@@ -323,3 +323,22 @@ footer a:hover {
     color: white;
     font-size: 16px;
 }
+
+
+/* MEDIA QUERIES */
+
+ @media only screen and (max-width: 850px){
+    .navbar h1 {
+        font-size: 15px;
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        letter-spacing: 3px;
+        font-weight: bold;
+        width: 50%;
+    }
+
+    .navbar .navbar-brand img {
+        width: auto;
+        height: 60px;
+    }
+
+} 
