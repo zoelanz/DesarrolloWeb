@@ -3,7 +3,7 @@
 /* -----------------------------------------------------PROPIEDADES GENERALES--------------------------------------------------------------------*/
 
 body {
-    background-color: rgb(219, 212, 192);
+    background-color: #e3dac9;
 }
 
 .contenedorh1 {
@@ -29,7 +29,7 @@ header {
     display: flex;
     position: fixed;
     top: 0%;
-    background-color: rgb(219, 212, 192);
+    background-color: #e3dac9;
     z-index: 100;
     width: 100%;
     justify-content: center;
@@ -145,23 +145,19 @@ a:hover {
 /* ------------------------------------------------------------------PAGINA INICIO---------------------------------------------------------------------*/
 
 .mainIndex {
-    background-color: rgb(219, 212, 192);
+    background-color: #e3dac9;
     grid-row: 2/3;
     width: 100%;
     margin-top: 70px;
     height: min-content;
 }
 
-.contenido {
-    width: 100%;
-    display: flex;
-    height: 500px;
-}
 
 .contenido__texto {
+
     background-color: rgb(144, 148, 168);
     width: 40%;
-    height: 100%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,7 +168,7 @@ a:hover {
     font-family: 'Encode Sans SC', sans-serif;
     font-size: 35px;
     color: white;
-    margin-top: 5px;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 
@@ -206,15 +202,100 @@ a:hover {
     text-decoration: none;
 }
 
-.contenido__imagen {
-    background-image: url(../imagenes/guasha1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 60%;
-    height: 500px;
-    align-items: center;
+
+.contenedorslide {
+    width: 100%;
+    display: flex;
 }
+
+.slidertexto {
+    width: 40%;
+    overflow: hidden;
+
+}
+
+.slidertexto ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+
+    animation: slide;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+
+}
+
+.slidertexto li {
+    width: 100%;
+    list-style: none;
+
+}
+
+.slider {
+    width: 60%;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+
+    animation: slide;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+
+}
+
+.slider img {
+    width: 100%;
+    height: 500px;
+}
+
+
+@keyframes slide {
+
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    96% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+
+
+
+}
+
+
 
 .contenido2 {
     height: min-content;
@@ -243,6 +324,7 @@ a:hover {
     justify-content: space-evenly;
     gap: 10px;
     padding: 0 10px 0 10px;
+    margin-bottom: 10px;
 }
 
 .contenidoimgs1 {
@@ -351,11 +433,9 @@ a:hover {
     .imagenindex .img4 {
         width: 50%;
     }
-}
 
-@media only screen and (max-width: 650px) {
-
-    .contenido {
+    .contenedorslide {
+        width: 100%;
         flex-direction: column;
         height: min-content;
     }
@@ -369,10 +449,28 @@ a:hover {
         line-height: 35px;
     }
 
-    .contenido__imagen {
+    .slider {
+        width: 100%;
+
+    }
+
+    .slidertexto {
         width: 100%;
     }
+
+    .slider ul li img {
+        height: 450px;
+    }
 }
+
+@media only screen and (max-width: 425px) {
+    .slider ul li img {
+        height: 300px;
+    }
+}
+
+
+
 
 /* ------------------------------------------------------------------PAGINA SOBRE MI---------------------------------------------------------------------*/
 
@@ -447,12 +545,13 @@ a:hover {
 
 .cajaterapia {
     padding: 2px;
-    background-color: rgb(201, 194, 174);
+    background-color: rgb(199, 218, 154);
     background-position: center;
     height: min-content;
     width: 100%;
     overflow: auto;
     margin-bottom: 30px;
+   
 }
 
 .contenidotextoimagen {
@@ -495,6 +594,7 @@ a:hover {
     width: 45%;
     height: 500px;
     z-index: 10;
+    border-radius: 0px 10px 10px 0px;
 }
 
 
@@ -514,9 +614,11 @@ a:hover {
     height: 500px;
     display: flex;
     flex-direction: column;
+    margin-top: 7px;
     justify-content: center;
     align-items: center;
     overflow: auto;
+    border-radius: 10px 0 0 10px;
 
 }
 
@@ -549,6 +651,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     overflow: auto;
+    border-radius: 0px 10px 10px 0px;
 
 }
 
@@ -569,6 +672,7 @@ a:hover {
     height: 500px;
     display: flex;
     z-index: 10;
+    border-radius: 10px 0 0 10px;
 }
 
 .cajaimagenderecha2 {
@@ -669,23 +773,30 @@ a:hover {
 }
 
 /* ------------------------------------------------------------------OTRAS TERAPIAS---------------------------------------------------------------------*/
+.headertextos .contenedorh1 h1{
+    font-weight: bold;
 
+}
 .mainotrasterapias {
     width: 100%;
     grid-row: 2/3;
     height: min-content;
-    background-color: rgb(219, 212, 192);
-    margin-top: 90px;
+    background-color: #e3dac9;
+    margin-top: 100px;
 }
 
 .otrasterapias {
     width: 100%;
+    margin-bottom: 5px;
+   
 }
 
 .tituloterapias {
     background-color: rgb(144, 148, 168);
     width: 100vw;
     height: min-content;
+   
+    
 }
 
 .otrasterapias h2 {
@@ -696,12 +807,18 @@ a:hover {
     color: black;
     font-size: 18px;
     letter-spacing: 2px;
+    margin-top: 8px;
+    font-weight: bold;
+    padding: 3px;
+
+
 }
 
 .cajaotrasterapias {
     width: 100%;
     height: 500px;
     display: flex;
+    margin-top: -8px;
 }
 
 .cajaflores__imagen {
@@ -730,9 +847,8 @@ a:hover {
     color: black;
     font-size: 20px;
     text-align: center;
-    animation-name: aparecer;
-    animation-duration: 4s;
-    animation-iteration-count: 6;
+    font-weight: bold;
+    margin-top: 10px;
 
 }
 
@@ -1012,6 +1128,12 @@ a:hover {
     outline: none;
 }
 
+.forminput::placeholder{
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .cajaform .inputbotones {
     font-weight: bold;
     width: 85px;
@@ -1050,6 +1172,7 @@ a:hover {
     margin-top: 70px;
     margin-right: 60px;
     margin-left: 200px;
+    border-radius: 10px;
 
 }
 
@@ -1196,17 +1319,3 @@ footer {
 
 /* ------------------------------------------------------------------ANIMACIONES--------------------------------------------------------------------*/
 
-@keyframes aparecer {
-
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1.2);
-    }

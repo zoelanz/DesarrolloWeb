@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FS Terapia en Medicina China</title>
     <link rel="LOGO ICON EN PESTAÑA" href="../imagenes/logopng.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -32,6 +35,7 @@
             </nav>
         </div>
     </header>
+    
     <main class="mainotrasterapias">
         <section class="otrasterapias">
             <div class="tituloterapias">
@@ -41,8 +45,8 @@
                 <div class="cajaotrasterapias">
                     <div class="cajaflores__imagen"></div>
                     <div class="cajaflores__texto">
-                        <h3>¿Que son las flores de bach?</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet atque dolore nobis
+                        <h3 data-aos="fade-left" data-aos-duration="2500">¿Que son las flores de bach?</h3>
+                        <p data-aos="fade-left" data-aos-duration="2500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet atque dolore nobis
                             enim
                             est
                             eaque quidem tenetur dolores nemo! Cum praesentium explicabo temporibus quos provident,
@@ -67,17 +71,6 @@
                 </div>
             </div>
             </div>
-            <!-- esta comentado porque sera parte de una galeria 
-             <img class="tamañoimagenflores2" src="../imagenes/floresdebach4.jpg" alt="flores de bach">
-                <div>
-                    <h3>¿Para que sirven?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, provident. Illo tempora
-                        quam
-                        blanditiis, repellendus facere repudiandae, odit alias enim amet quidem est et fugit iste
-                        quos
-                        at
-                        aliquid unde?</p>
-                </div> -->
         </section>
         <section class="otrasterapias">
             <div class="tituloterapias">
@@ -85,8 +78,8 @@
             </div>
             <div class="cajaotrasterapias" id="seccionsonoro">
                 <div class="cajaflores__texto">
-                    <h3>¿En que consiste el masaje sonoro?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quae ab nisi neque non
+                    <h3 data-aos="fade-right" data-aos-duration="2500">¿En que consiste el masaje sonoro?</h3>
+                    <p data-aos="fade-right" data-aos-duration="2500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quae ab nisi neque non
                         deserunt
                         minus odit amet sed alias?
                         Placeat, magnam. Vitae dolore pariatur libero recusandae eius voluptas totam porro, consequatur
@@ -111,12 +104,30 @@
                 <div class="masajesonoro__imagen"> </div>
             </div>
         </section>
+        
+       
     </main>
     <footer>
         <a href="#top" class="contenedorFooter__boton">^INICIO DE PAGINA^</a> <br>
         <span class="contenedorFooter__copyright">Copyright 2021. By Zetaele Coding</span>
         <img class="logofooter" src="../imagenes/logopng.png" alt="logo">
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
+    <!-- BOOTSTRAP -->
+    
 </body>
 
 </html>
