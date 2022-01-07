@@ -503,8 +503,7 @@ a:hover {
 .mainmedicinachinaterapias {
     width: 100%;
     grid-row: 2/3;
-    height: min-content;
-    margin-bottom: -50px;
+    height: min-content;  
 }
 
 .cajaterapia {
