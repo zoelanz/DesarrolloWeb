@@ -6,9 +6,7 @@ body {
     background-color: #e3dac9;
 }
 
-
 /* bootsrap nav */
-
 
 .nav {
     height: 120px;
@@ -19,12 +17,9 @@ body {
     /* background-color: red; */
     padding-left: 30px;
     width: 100%;
-
 }
 
-
 .navbar {
-
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-weight: bolder;
     letter-spacing: 2px;
@@ -40,24 +35,18 @@ body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-
 .navbar-nav {
-    /* background-color: chartreuse; */
     height: 50px;
     width: 100%;
     justify-content: center;
-
 }
 
-
 .navbar .navbar-brand img {
-
     width: auto;
     height: 80px;
 }
 
 .navbar h1 {
-    /* background-color: blue; */
     font-size: 18px;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     letter-spacing: 3px;
@@ -74,9 +63,6 @@ a:hover {
     font-size: 16px;
 }
 
-
-
-
 /* ------------------------------------------------------------------MEDIA QUERIES NAV---------------------------------------------------------------------*/
 @media only screen and (max-width: 970px) {
     .navbar h1 {
@@ -89,7 +75,6 @@ a:hover {
     }
 
     .navbar-nav .nav-item .nav-link {
-
         padding-left: 10px;
         margin-top: 2px;
     }
@@ -116,7 +101,6 @@ a:hover {
     }
 
     .navbar-nav {
-
         height: min-content;
     }
 }
@@ -128,7 +112,6 @@ a:hover {
     }
 
     .navbar .navbar-brand img {
-
         width: auto;
         height: 45px;
     }
@@ -136,19 +119,7 @@ a:hover {
     .navbar {
         flex-direction: row;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------------------------------------------------------------------PAGINA INICIO---------------------------------------------------------------------*/
 
@@ -157,12 +128,9 @@ a:hover {
     grid-row: 2/3;
     width: 100%;
     height: min-content;
-
 }
 
-
 .contenido__texto {
-
     background-color: rgb(144, 148, 168);
     width: 40%;
     height: 500px;
@@ -178,8 +146,6 @@ a:hover {
     color: white;
     margin-top: 50px;
     margin-bottom: 10px;
-
-
 }
 
 .contenido__texto--parrafo {
@@ -212,7 +178,6 @@ a:hover {
     text-decoration: none;
 }
 
-
 .contenedorslide {
     width: 100%;
     display: flex;
@@ -221,25 +186,21 @@ a:hover {
 .slidertexto {
     width: 40%;
     overflow: hidden;
-
 }
 
 .slidertexto ul {
     display: flex;
     padding: 0;
     width: 300%;
-
     animation: slide;
     animation-duration: 35s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
-
 }
 
 .slidertexto li {
     width: 100%;
     list-style: none;
-
 }
 
 .slider {
@@ -251,25 +212,21 @@ a:hover {
     display: flex;
     padding: 0;
     width: 300%;
-
     animation: slide;
     animation-duration: 35s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
-
 }
 
 .slider li {
     width: 100%;
     list-style: none;
-
 }
 
 .slider img {
     width: 100%;
     height: 500px;
 }
-
 
 @keyframes slide {
 
@@ -300,9 +257,6 @@ a:hover {
     100% {
         margin-left: 0;
     }
-
-
-
 }
 
 .contenido2 {
@@ -461,7 +415,6 @@ a:hover {
 
     .slider {
         width: 100%;
-
     }
 
     .slidertexto {
@@ -479,9 +432,6 @@ a:hover {
     }
 }
 
-
-
-
 /* ------------------------------------------------------------------PAGINA SOBRE MI---------------------------------------------------------------------*/
 
 .mainSobreMi {
@@ -489,7 +439,6 @@ a:hover {
     grid-row: 2/3;
     display: flex;
     height: min-content;
-    /* margin-top: 100px; */
 }
 
 .mainsobremi__imagen {
@@ -505,9 +454,6 @@ a:hover {
     background-color: rgb(144, 148, 168);
     width: 60%;
     height: 500px;
-
-
-
 }
 
 .mainsobremi__texto h2 {
@@ -532,7 +478,6 @@ a:hover {
     font-weight: bold;
     line-height: 35px;
     text-align: justify;
-
 }
 
 /* ----------------------------------------------------------------MEDIA QUERIES SOBRE MI---------------------------------------------------------------------*/
@@ -544,17 +489,12 @@ a:hover {
     }
 
     .mainsobremi__texto {
-
-
         width: 100vw;
         height: auto;
-
     }
 
     .mainsobremi__imagen {
         width: 100vw;
-
-
     }
 }
 
@@ -575,7 +515,6 @@ a:hover {
     width: 100%;
     overflow: auto;
     margin-bottom: 30px;
-
 }
 
 .contenidotextoimagen {
@@ -609,7 +548,6 @@ a:hover {
     height: min-content;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .cajaimagenizquierda {
@@ -623,7 +561,6 @@ a:hover {
     border-radius: 0px 10px 10px 0px;
 }
 
-
 .cajaimagenizquierda2 {
     background-image: url(../imagenes/giphyguasha.gif);
     background-size: cover;
@@ -632,7 +569,6 @@ a:hover {
     height: 400px;
     margin-left: 20px;
 }
-
 
 .cajatextoderecha {
     background-color: rgb(144, 148, 168);
@@ -645,7 +581,6 @@ a:hover {
     align-items: center;
     overflow: auto;
     border-radius: 10px 0 0 10px;
-
 }
 
 .h3derecha {
@@ -679,7 +614,6 @@ a:hover {
     align-items: center;
     overflow: auto;
     border-radius: 0px 10px 10px 0px;
-
 }
 
 .h3izquierda {
@@ -688,7 +622,6 @@ a:hover {
     font-size: 25px;
     text-align: center;
     font-weight: bold;
-
 }
 
 .cajaimagenderecha {
@@ -802,7 +735,6 @@ a:hover {
 /* ------------------------------------------------------------------OTRAS TERAPIAS---------------------------------------------------------------------*/
 .headertextos .contenedorh1 h1 {
     font-weight: bold;
-
 }
 
 .mainotrasterapias {
@@ -815,20 +747,15 @@ a:hover {
 .otrasterapias {
     width: 100%;
     margin-bottom: 5px;
-
 }
 
 .tituloterapias {
     background-color: rgb(144, 148, 168);
     width: 100vw;
     height: min-content;
-
-
-
 }
 
 .otrasterapias h2 {
-
     width: 100%;
     text-align: center;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
@@ -839,8 +766,6 @@ a:hover {
     font-weight: bold;
     padding: 15px;
     text-shadow: 2px 2px 7px #f3ecde;
-
-
 }
 
 .cajaotrasterapias {
@@ -859,8 +784,6 @@ a:hover {
     height: 500px;
     z-index: 3;
     box-shadow: 2px 2px 6px rgb(48, 49, 54);
-
-
 }
 
 .tamañoimagenotrasterapias {
@@ -873,7 +796,6 @@ a:hover {
     width: 50%;
     height: 500px;
     overflow: auto;
-
 }
 
 .cajaflores__texto h3 {
@@ -883,7 +805,6 @@ a:hover {
     text-align: center;
     font-weight: bold;
     margin-top: 30px;
-
 }
 
 .cajaflores__texto p {
@@ -926,9 +847,6 @@ a:hover {
     height: 500px;
     box-shadow: -2px 2px 6px rgb(48, 49, 54);
 }
-
-
-
 
 /* -----------------------------------------------------------MEDIA QUERIES OTRAS TERAPIAS---------------------------------------------------------------------*/
 
@@ -1101,7 +1019,6 @@ a:hover {
     }
 }
 
-
 /* ------------------------------------------------------------------CONTACTO---------------------------------------------------------------------*/
 
 .mainform {
@@ -1109,7 +1026,6 @@ a:hover {
     height: min-content;
     background-color: rgb(219, 212, 192);
     grid-row: 2/3;
-
 }
 
 form {
@@ -1128,8 +1044,6 @@ form {
     display: flex;
     height: min-content;
     width: 100%;
-    
-
 }
 
 .cajaform {
@@ -1219,7 +1133,6 @@ form {
     margin-left: 200px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgb(90, 95, 77);
-
 }
 
 .icono {
@@ -1242,7 +1155,6 @@ form {
     margin-top: -20px;
 }
 
-
 .tamañoiconomail {
     width: 22px;
     height: 22px;
@@ -1264,7 +1176,6 @@ form {
     font-size: 22px;
     letter-spacing: 2px;
     font-weight: bold;
-
 }
 
 .parrafomensaje {
@@ -1278,7 +1189,6 @@ form {
 /* ------------------------------------------------------------------MEDIA QUERIES PAGINA CONTACTO---------------------------------------------------------------------*/
 
 @media only screen and (max-width: 950px) {
-
 
     .mainform {
         margin-top: 0;
@@ -1308,7 +1218,7 @@ form {
         margin: 0px;
     }
 
-    form{
+    form {
         margin-bottom: 30px;
     }
 }
