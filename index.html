@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./sass/style.css">
 </head>
 
 <body class="contenedor" id="top">
@@ -43,10 +43,8 @@
     <!-- NAV BAR FIN -->
 
     <main class="mainIndex">
-        <section>
-
+        <section class="contenidoSuperior">
             <div class="contenedorslide">
-
                 <div class="slidertexto">
                     <ul>
                         <li class="contenido__texto">
@@ -59,7 +57,6 @@
                             <div>
                                 <a class="botonconocemas" href="./paginas/medicinachina.html">CONOCE MÁS </a>
                             </div>
-
                         </li>
                         <li class="contenido__texto">
                             <h3 class="contenido__texto--titulo">Acupuntura</h3>
@@ -97,7 +94,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="contenidoInferior">
             <div class="contenido2">
                 <h3 class="contenido2__titulo">¿DE QUE SE TRATA LA MEDICINA CHINA?</h3>
                 <p class="contenido2__parrafo">
@@ -131,11 +128,13 @@
             </div>
         </section>
     </main>
+
     <footer>
         <a href="#top" class="contenedorFooter__boton">^INICIO DE PAGINA^</a> <br>
         <span class="contenedorFooter__copyright">Copyright 2022. By Zetaele Coding</span>
         <img class="logofooter" src="./imagenes/logopng.png" alt="logo">
     </footer>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

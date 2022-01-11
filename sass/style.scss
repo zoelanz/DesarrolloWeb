@@ -1,93 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&family=Jost:wght@300&family=Poiret+One&family=Sawarabi+Gothic&family=Zen+Kaku+Gothic+Antique&display=swap');
 
-/* -----------------------------------------------------PROPIEDADES GENERALES--------------------------------------------------------------------*/
+// VARIABLES
+
+$celeste: rgb(144, 148, 168);
+$verde: rgb(199, 218, 154);
+$body: #e3dac9;
+$footer: #d6cbb7;
 
 body {
-    background-color: #e3dac9;
+    background-color: $body;
 }
 
-/* bootsrap nav */
-
-
-
-.navbar-nav .nav-item .nav-link {
-    color: black;
-    padding-left: 30px;
-    width: 100%;
-}
+/* -------------------------------------------------------- NAV CON SASS-------------------------------------------------------*/
 
 .navbar {
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    font-weight: bolder;
+    font: {
+        family: 'Zen Kaku Gothic Antique', sans-serif;
+        size: 14px;
+        weight: bolder;
+    }
+
+    ;
     letter-spacing: 2px;
-    font-size: 14px;
     text-align: center;
     display: inline-block;
     background-color: #e3dac9 !important;
     height: 120px;
     width: 100%;
-}
 
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar-nav {
-    height: 50px;
-    width: 100%;
-    justify-content: center;
-}
-
-.navbar .navbar-brand img {
-    width: auto;
-    height: 80px;
-}
-
-.navbar h1 {
-    font-size: 18px;
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    letter-spacing: 3px;
-    font-weight: bold;
-    margin-top: -70px;
-}
-
-a {
-    transition: all 0.6s ease;
-}
-
-a:hover {
-    color: white;
-    font-size: 16px;
-}
-
-/* ------------------------------------------------------------------MEDIA QUERIES NAV---------------------------------------------------------------------*/
-@media only screen and (max-width: 970px) {
-    .navbar h1 {
-        font-size: 14px;
-        margin-top: -65px;
+    .navbar-brand {
+        img {
+            width: auto;
+            height: 80px;
+        }
     }
+
+    h1 {
+        font: {
+            size: 18px;
+            family: 'Zen Kaku Gothic Antique', sans-serif;
+            weight: bold;
+        }
+
+        ;
+        letter-spacing: 3px;
+        margin-top: -70px;
+    }
+
+    .navbar-toggler {
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    }
+
+    .navbar-collapse {
+        .navbar-nav {
+            height: 50px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .nav-item {
+            .nav-link {
+                color: black;
+                padding-left: 30px;
+                width: 100%;
+            }
+
+            a {
+                transition: all 0.6s ease;
+            }
+
+            a:hover {
+                color: white;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+/* --------------------------------------------------------MEDIA QUERIES NAV CON SASS-------------------------------------------------------*/
+
+@media only screen and (max-width: 970px) {
 
     .navbar {
         font-size: 11px;
-    }
 
-    .navbar-nav .nav-item .nav-link {
-        padding-left: 10px;
-        margin-top: 2px;
+        h1 {
+            font-size: 14px;
+            margin-top: -65px;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            padding-left: 15px;
+            margin-top: 2px;
+        }
+
     }
 }
 
 @media only screen and (max-width: 767px) {
-    .navbar h1 {
-        margin: 0px;
-    }
-
-    .navbar .navbar-brand img {
-        width: auto;
-        height: 65px;
-        margin-top: 0px;
-        margin: 0;
-    }
 
     .navbar {
         display: flex;
@@ -95,134 +108,286 @@ a:hover {
         height: auto;
         justify-content: center;
         padding: 0;
-    }
 
-    .navbar-nav {
-        height: min-content;
+        h1 {
+            margin: 0px;
+        }
+
+        .navbar-brand img {
+            width: auto;
+            height: 65px;
+            margin: 0;
+        }
+
+        .navbar-nav {
+            height: min-content;
+        }
     }
 }
 
 @media only screen and (max-width: 687px) {
-    .navbar h1 {
-        font-size: 10px;
-        width: 50%;
-    }
-
-    .navbar .navbar-brand img {
-        width: auto;
-        height: 45px;
-    }
 
     .navbar {
         flex-direction: row;
+
+        h1 {
+            font-size: 10px;
+            width: 50%;
+        }
+
+        .navbar .navbar-brand img {
+            width: auto;
+            height: 45px;
+        }
     }
 }
 
-/* ------------------------------------------------------------------PAGINA INICIO---------------------------------------------------------------------*/
+/* -------------------------------------------------------------PAGINA INICIO CON SASS-----------------------------------------------------------*/
 
-.mainIndex {
-    background-color: #e3dac9;
-    grid-row: 2/3;
-    width: 100%;
-    height: min-content;
-}
+body {
+    .mainIndex {
+        background-color: #e3dac9;
+        grid-row: 2/3;
+        width: 100%;
+        height: min-content;
 
-.contenido__texto {
-    background-color: rgb(144, 148, 168);
-    width: 40%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
+        .contenidoSuperior {
+            .contenedorslide {
+                width: 100%;
+                display: flex;
 
-.contenido__texto--titulo {
-    font-family: 'Encode Sans SC', sans-serif;
-    font-size: 40px;
-    color: white;
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
+                .slidertexto {
+                    width: 40%;
+                    overflow: hidden;
 
-.contenido__texto--parrafo {
-    font-family: 'Jost', sans-serif;
-    font-size: 17px;
-    font-weight: 900;
-    color: white;
-    letter-spacing: 2px;
-    word-spacing: 1px;
-    line-height: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 50px;
-}
+                    ul {
+                        animation: {
+                            name: slide;
+                            duration: 35s;
+                            iteration-count: infinite;
+                            timing-function: ease-in;
+                        }
 
-.botonconocemas {
-    background-color: rgb(144, 148, 168);
-    text-decoration: none;
-    padding: 5px;
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    font-weight: 800;
-    font-size: 13px;
-    letter-spacing: 2px;
-    color: white;
-    cursor: pointer;
-}
+                        ;
+                        display: flex;
+                        padding: 0;
+                        width: 300%;
 
-.botonconocemas:hover {
-    color: rgb(12, 10, 11);
-    text-decoration: none;
-}
+                        .contenido__texto {
+                            width: 100%;
+                            list-style: none;
+                            background-color: $celeste;
+                            height: 500px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
 
-.contenedorslide {
-    width: 100%;
-    display: flex;
-}
+                            .contenido__texto--titulo {
+                                font: {
+                                    family: 'Encode Sans SC', sans-serif;
+                                    size: 40px;
+                                }
 
-.slidertexto {
-    width: 40%;
-    overflow: hidden;
-}
+                                ;
 
-.slidertexto ul {
-    display: flex;
-    padding: 0;
-    width: 300%;
-    animation: slide;
-    animation-duration: 35s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-}
+                                margin: {
+                                    top: 50px;
+                                    bottom: 10px;
+                                }
 
-.slidertexto li {
-    width: 100%;
-    list-style: none;
-}
+                                ;
+                                color: white;
+                            }
 
-.slider {
-    width: 60%;
-    overflow: hidden;
-}
+                            .contenido__texto--parrafo {
+                                font: {
+                                    family: 'Jost', sans-serif;
+                                    size: 17px;
+                                    weight: 900;
+                                }
 
-.slider ul {
-    display: flex;
-    padding: 0;
-    width: 300%;
-    animation: slide;
-    animation-duration: 35s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-}
+                                ;
 
-.slider li {
-    width: 100%;
-    list-style: none;
-}
+                                margin: {
+                                    left: 30px;
+                                    right: 30px;
+                                    bottom: 50px;
+                                }
 
-.slider img {
-    width: 100%;
-    height: 500px;
+                                ;
+                                color: white;
+                                letter-spacing: 2px;
+                                word-spacing: 1px;
+                                line-height: 30px;
+                            }
+
+                            div {
+                                .botonconocemas {
+                                    font: {
+                                        family: 'Zen Kaku Gothic Antique', sans-serif;
+                                        weight: 800;
+                                        size: 13px;
+
+                                    }
+
+                                    ;
+                                    background-color: rgb(144, 148, 168);
+                                    text-decoration: none;
+                                    padding: 5px;
+                                    letter-spacing: 2px;
+                                    color: white;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .slider {
+                    width: 60%;
+                    overflow: hidden;
+
+                    ul {
+                        animation: {
+                            name: slide;
+                            duration: 35s;
+                            iteration-count: infinite;
+                            timing-function: ease-in;
+                        }
+
+                        ;
+                        display: flex;
+                        padding: 0;
+                        width: 300%;
+
+
+                        li {
+                            width: 100%;
+                            list-style: none;
+
+                            img {
+                                width: 100%;
+                                height: 500px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .contenidoInferior {
+            .contenido2 {
+                padding: {
+                    top: 10px;
+                    bottom: 10px;
+                }
+
+                ;
+                height: min-content;
+                width: 100%;
+                overflow: visible;
+
+                .contenido2__titulo {
+                    font: {
+                        family: 'Zen Kaku Gothic Antique', sans-serif;
+                        size: 18px;
+                        weight: bold;
+                    }
+
+                    ;
+
+                    text-align: center;
+                    letter-spacing: 2px;
+                    margin-top: 4px;
+
+                }
+
+                .contenido2__parrafo {
+                    font: {
+                        family: 'Jost', sans-serif;
+                        size: 16px;
+                        weight: bold;
+                    }
+
+                    ;
+                    text-align: center;
+                }
+            }
+
+            .contenido2Imagenes {
+                display: flex;
+                justify-content: space-evenly;
+                gap: 10px;
+                padding: 0 10px 0 10px;
+                margin-bottom: 10px;
+
+                .contenidoimgs1 {
+                    display: flex;
+                    width: 100%;
+                    gap: 10px;
+
+                    .imagenindex {
+                        height: 180px;
+                        width: 50%;
+                    }
+
+                    .img1 {
+                        background: {
+                            image: url(../imagenes/ventosas3.jpeg);
+                            size: cover;
+                            position: center;
+
+                        }
+
+                        ;
+
+                    }
+
+                    .img2 {
+                        background: {
+                            image: url(../imagenes/guasha1.jpg);
+                            size: cover;
+                            position: center;
+
+                        }
+
+                        ;
+                    }
+                }
+
+                .contenidoimgs2 {
+                    display: flex;
+                    width: 100%;
+                    gap: 10px;
+
+                    .imagenindex {
+                        height: 180px;
+                        width: 50%;
+                    }
+
+                    .img3 {
+
+                        background: {
+                            image: url(../imagenes/masajefacial1.jpg);
+                            size: cover;
+                            position: center;
+                        }
+
+                    }
+
+                    .img4 {
+                        background: {
+                            image: url(../imagenes/acupuntura1.jpg);
+                            size: cover;
+                            position: center;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
 }
 
 @keyframes slide {
@@ -256,80 +421,7 @@ a:hover {
     }
 }
 
-.contenido2 {
-    height: min-content;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    overflow: visible;
-}
-
-.contenido2__titulo {
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 18px;
-    margin-top: 4px;
-    font-weight: bold;
-}
-
-.contenido2__parrafo {
-    font-family: 'Jost', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.contenido2Imagenes {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
-    padding: 0 10px 0 10px;
-    margin-bottom: 10px;
-}
-
-.contenidoimgs1 {
-    display: flex;
-    width: 100%;
-    gap: 10px;
-}
-
-.contenidoimgs2 {
-    display: flex;
-    width: 100%;
-    gap: 10px;
-}
-
-.imagenindex {
-    height: 180px;
-    width: 50%;
-}
-
-.img1 {
-    background-image: url(../imagenes/ventosas3.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-
-.img2 {
-    background-image: url(../imagenes/guasha1.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.img3 {
-    background-image: url(../imagenes/masajefacial1.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.img4 {
-    background-image: url(../imagenes/acupuntura1.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-/* ------------------------------------------------------------------MEDIA QUERIES INDEX---------------------------------------------------------------------*/
+/* -----------------------------------------------------------MEDIA QUERIES INDEX CON SASS--------------------------------------------------*/
 
 @media only screen and (max-width: 1180px) {
 
@@ -343,89 +435,96 @@ a:hover {
 
     .mainIndex {
         margin-top: 0px;
-    }
 
-    .contenido__texto--titulo {
-        font-size: 25px;
-        margin-top: 20px;
+        .contenido__texto--titulo {
+            font-size: 25px;
+            margin-top: 20px;
+        }
     }
 }
 
 @media only screen and (max-width: 820px) {
-    .contenido__texto--titulo {
-        margin-top: 18px;
+
+    body {
+        .mainIndex {
+            .contenidoSuperior {
+                .contenedorslide {
+                    width: 100%;
+                    flex-direction: column;
+                    height: min-content;
+
+                    .slidertexto {
+                        width: 100%;
+
+                        ul {
+                            .contenido__texto {
+                                width: 100%;
+
+                                .contenido__texto--titulo {
+                                    margin-top: 18px;
+                                }
+
+                                .contenido__texto--parrafo {
+                                    font-size: 16px;
+                                    line-height: 35px;
+                                }
+                            }
+                        }
+                    }
+
+                    .slider {
+                        width: 100%;
+
+                        ul {
+                            li {
+                                img {
+                                    height: 400px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    .contenido__texto--parrafo {
-        font-size: 14px;
-        line-height: 20px;
-    }
+    .contenidoInferior {
+        .contenido2Imagenes {
+            flex-direction: column;
 
-    .contenido2Imagenes {
-        flex-direction: column;
-    }
+            .contenidoimgs1 {
+                width: 100%;
+                display: flex;
 
-    .contenido2Imagenes .imagenindex {
-        width: 50%;
-    }
+                .imagenindex .img1 {
+                    width: 50%;
+                }
 
-    .contenidoimgs1 {
-        width: 100%;
-        display: flex;
-    }
+                .imagenindex .img2 {
+                    width: 50%;
+                }
+            }
 
-    .imagenindex .img1 {
-        width: 50%;
-    }
+            .contenidoimgs2 {
+                width: 100%;
+                display: flex;
 
-    .imagenindex .img2 {
-        width: 50%;
-    }
+                .imagenindex .img3 {
+                    width: 50%;
+                }
 
-    .contenidoimgs2 {
-        width: 100%;
-        display: flex;
-    }
-
-    .imagenindex .img3 {
-        width: 50%;
-    }
-
-    .imagenindex .img4 {
-        width: 50%;
-    }
-
-    .contenedorslide {
-        width: 100%;
-        flex-direction: column;
-        height: min-content;
-    }
-
-    .contenido__texto {
-        width: 100%;
-    }
-
-    .contenido__texto--parrafo {
-        font-size: 16px;
-        line-height: 35px;
-    }
-
-    .slider {
-        width: 100%;
-    }
-
-    .slidertexto {
-        width: 100%;
-    }
-
-    .slider ul li img {
-        height: 450px;
+                .imagenindex .img4 {
+                    width: 50%;
+                }
+            }
+        }
     }
 }
 
+
 @media only screen and (max-width: 425px) {
-    .slider ul li img {
-        height: 300px;
+    body .mainIndex .contenidoSuperior .contenedorslide .slider ul li img {
+        height: 250px;
     }
 }
 
@@ -441,6 +540,7 @@ a:hover {
 .mainsobremi__imagen {
     width: 40%;
     height: 500px;
+    background-color: rosybrown;
     background-image: url(../imagenes/florenchina.jfif);
     background-size: cover;
     background-position: center;
@@ -499,7 +599,7 @@ a:hover {
 .mainmedicinachinaterapias {
     width: 100%;
     grid-row: 2/3;
-    height: min-content;  
+    height: min-content;
 }
 
 .cajaterapia {
@@ -1227,43 +1327,61 @@ footer {
     flex-direction: column;
     z-index: 20;
     height: 110px;
-}
 
-.contenedorFooter__boton {
-    height: min-content;
-    width: 200px;
-    color: black;
-    font-family: 'Jost', sans-serif;
-    font-size: 14px;
-    font-weight: bolder;
-    letter-spacing: 1px;
-    text-decoration: none;
-    padding: 10px;
-    margin-top: 10px;
-    text-align: center;
-}
 
-.contenedorFooter__copyright {
-    height: 28px;
-    font-family: 'Jost', sans-serif;
-    font-size: 12px;
-    font-weight: bolder;
-    text-decoration: none;
-    color: black;
-    align-self: center;
-    margin-top: 2px;
-}
 
-.logofooter {
-    width: 50px;
-    height: 50px;
-    align-self: center;
-    margin-top: -90px;
-    transition: ease 1s all;
-}
+    .contenedorFooter__boton {
+        font: {
+            family: 'Jost', sans-serif;
+            size: 14px;
+            weight: bolder;
+        }
 
-.logofooter:hover {
-    transform: rotate(2turn);
+        ;
+        height: min-content;
+        width: 200px;
+        color: black;
+        letter-spacing: 1px;
+        text-decoration: none;
+        padding: 10px;
+        margin-top: 10px;
+        text-align: center;
+        transition: all 0.6s ease;
+
+        &:hover {
+            color: white;
+            font-size: 16px;
+        }
+
+    }
+
+    .contenedorFooter__copyright {
+        font: {
+            family: 'Jost', sans-serif;
+            size: 12px;
+            weight: bolder;
+
+        }
+
+        ;
+        height: 28px;
+        text-decoration: none;
+        color: black;
+        align-self: center;
+        margin-top: 2px;
+    }
+
+    .logofooter {
+        width: 50px;
+        height: 50px;
+        align-self: center;
+        margin-top: -90px;
+        transition: ease 1s all;
+
+        &:hover {
+            transform: rotate(2turn);
+        }
+    }
 }
 
 /* ------------------------------------------------------------------MEDIA QUERIES FOOTER---------------------------------------------------------------------*/
