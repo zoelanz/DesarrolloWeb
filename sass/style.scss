@@ -7,6 +7,37 @@ $verde: rgb(199, 218, 154);
 $body: #e3dac9;
 $footer: #d6cbb7;
 
+//aplicando mixin
+
+@mixin tamañoImg ($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin formatoImg ($size, $position) {
+    background-size: $size;
+    background-position: $position;
+}
+
+@mixin animacion {
+    animation: {
+        name: slide;
+        duration: 35s;
+        iteration-count: infinite;
+        timing-function: ease-in;
+    }
+
+    display: flex;
+    padding: 0;
+    width: 300%;
+}
+
+//aplicando maps
+
+$slidetexto:(titulo:40px,
+    parrafo: 17px,
+    boton: 13px, );
+
 body {
     background-color: $body;
 }
@@ -27,6 +58,8 @@ body {
     background-color: #e3dac9 !important;
     height: 120px;
     width: 100%;
+
+
 
     .navbar-brand {
         img {
@@ -78,7 +111,6 @@ body {
         }
     }
 }
-
 
 /* --------------------------------------------------------MEDIA QUERIES NAV CON SASS-------------------------------------------------------*/
 
@@ -161,17 +193,7 @@ body {
                     overflow: hidden;
 
                     ul {
-                        animation: {
-                            name: slide;
-                            duration: 35s;
-                            iteration-count: infinite;
-                            timing-function: ease-in;
-                        }
-
-                        ;
-                        display: flex;
-                        padding: 0;
-                        width: 300%;
+                        @include animacion;
 
                         .contenido__texto {
                             width: 100%;
@@ -186,25 +208,26 @@ body {
                             .contenido__texto--titulo {
                                 font: {
                                     family: 'Encode Sans SC', sans-serif;
-                                    size: 40px;
+                                    size: map-get($slidetexto, titulo);
                                 }
 
                                 ;
 
                                 margin: {
-                                    top: 50px;
-                                    bottom: 10px;
+                                    top: 20px;
+                                    bottom: 20px;
                                 }
 
                                 ;
                                 color: white;
                             }
 
+
                             .contenido__texto--parrafo {
                                 font: {
                                     family: 'Jost', sans-serif;
-                                    size: 17px;
                                     weight: 900;
+                                    size: map-get($slidetexto, parrafo);
                                 }
 
                                 ;
@@ -227,7 +250,7 @@ body {
                                     font: {
                                         family: 'Zen Kaku Gothic Antique', sans-serif;
                                         weight: 800;
-                                        size: 13px;
+                                        size: map-get($slidetexto, boton);
 
                                     }
 
@@ -249,18 +272,7 @@ body {
                     overflow: hidden;
 
                     ul {
-                        animation: {
-                            name: slide;
-                            duration: 35s;
-                            iteration-count: infinite;
-                            timing-function: ease-in;
-                        }
-
-                        ;
-                        display: flex;
-                        padding: 0;
-                        width: 300%;
-
+                        @include animacion;
 
                         li {
                             width: 100%;
@@ -311,7 +323,8 @@ body {
                     }
 
                     ;
-                    text-align: center;
+                    padding: 0 25px 0 25px;
+                    text-align: justify;
                 }
             }
 
@@ -328,67 +341,51 @@ body {
                     gap: 10px;
 
                     .imagenindex {
-                        height: 180px;
-                        width: 50%;
+                        @include tamañoImg (180px, 50%);
+                        box-shadow: 2px 2px 6px rgb(48, 49, 54);
                     }
 
                     .img1 {
-                        background: {
-                            image: url(../imagenes/ventosas3.jpeg);
-                            size: cover;
-                            position: center;
-
-                        }
-
+                        @include formatoImg (cover, center);
+                        background-image: url(../imagenes/ventosas3.jpeg);
                         ;
 
                     }
 
                     .img2 {
-                        background: {
-                            image: url(../imagenes/guasha1.jpg);
-                            size: cover;
-                            position: center;
+                        @include formatoImg (cover, center);
 
-                        }
+                        background-image: url(../imagenes/guasha1.jpg);
 
-                        ;
                     }
+
+                    ;
+                }
+            }
+
+            .contenidoimgs2 {
+                @extend .contenidoimgs1;
+
+                .imagenindex {
+                    @include tamañoImg (180px, 50%);
                 }
 
-                .contenidoimgs2 {
-                    display: flex;
-                    width: 100%;
-                    gap: 10px;
+                .img3 {
+                    @include formatoImg (cover, center);
+                    background-image: url(../imagenes/masajefacial1.jpg);
 
-                    .imagenindex {
-                        height: 180px;
-                        width: 50%;
-                    }
+                }
 
-                    .img3 {
+                .img4 {
+                    @include formatoImg (cover, center);
+                    background-image: url(../imagenes/acupuntura1.jpg);
 
-                        background: {
-                            image: url(../imagenes/masajefacial1.jpg);
-                            size: cover;
-                            position: center;
-                        }
-
-                    }
-
-                    .img4 {
-                        background: {
-                            image: url(../imagenes/acupuntura1.jpg);
-                            size: cover;
-                            position: center;
-                        }
-
-                    }
                 }
             }
         }
     }
 }
+
 
 @keyframes slide {
 
@@ -518,6 +515,7 @@ body {
                 }
             }
         }
+
     }
 }
 
@@ -544,6 +542,8 @@ body {
     background-image: url(../imagenes/florenchina.jfif);
     background-size: cover;
     background-position: center;
+    box-shadow: 2px 2px 6px rgb(48, 49, 54);
+    z-index: 5;
 }
 
 .mainsobremi__texto {
@@ -846,8 +846,9 @@ body {
 
 .tituloterapias {
     background-color: rgb(144, 148, 168);
-    width: 100vw;
+    width: 100%;
     height: min-content;
+
 }
 
 .otrasterapias h2 {
@@ -860,7 +861,7 @@ body {
     margin-top: 8px;
     font-weight: bold;
     padding: 15px;
-    text-shadow: 2px 2px 7px #f3ecde;
+    text-shadow: 2px 2px 7px #4b4763;
 }
 
 .cajaotrasterapias {
@@ -871,7 +872,7 @@ body {
 }
 
 .cajaflores__imagen {
-    background-image: url(../imagenes/floresdebach.jpg);
+    background-image: url(../imagenes/flores.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -899,7 +900,7 @@ body {
     font-size: 20px;
     text-align: center;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .cajaflores__texto p {
@@ -1281,7 +1282,7 @@ form {
     text-align: center;
 }
 
-/* ------------------------------------------------------------------MEDIA QUERIES PAGINA CONTACTO---------------------------------------------------------------------*/
+/* ----------------------------------------------------------MEDIA QUERIES PAGINA CONTACTO------------------------------------------------------------*/
 
 @media only screen and (max-width: 950px) {
 
@@ -1382,6 +1383,28 @@ footer {
             transform: rotate(2turn);
         }
     }
+}
+
+.sitemap {
+    height: min-content;
+    width: 100%;
+    background-color: #d6cbb7;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    a {
+        color: black;
+        padding-bottom: 5px;
+        text-decoration: none;
+
+        font: {
+            family: 'Jost', sans-serif;
+            size: 12px;
+            weight: bolder;
+        }
+    }
+
 }
 
 /* ------------------------------------------------------------------MEDIA QUERIES FOOTER---------------------------------------------------------------------*/

@@ -140,14 +140,14 @@ body .mainIndex .contenidoSuperior .contenedorslide .slidertexto ul .contenido__
 body .mainIndex .contenidoSuperior .contenedorslide .slidertexto ul .contenido__texto .contenido__texto--titulo {
   font-family: "Encode Sans SC", sans-serif;
   font-size: 40px;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: white;
 }
 body .mainIndex .contenidoSuperior .contenedorslide .slidertexto ul .contenido__texto .contenido__texto--parrafo {
   font-family: "Jost", sans-serif;
-  font-size: 17px;
   font-weight: 900;
+  font-size: 17px;
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 50px;
@@ -213,7 +213,8 @@ body .mainIndex .contenidoInferior .contenido2 .contenido2__parrafo {
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: bold;
-  text-align: center;
+  padding: 0 25px 0 25px;
+  text-align: justify;
 }
 body .mainIndex .contenidoInferior .contenido2Imagenes {
   display: flex;
@@ -222,43 +223,39 @@ body .mainIndex .contenidoInferior .contenido2Imagenes {
   padding: 0 10px 0 10px;
   margin-bottom: 10px;
 }
-body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs1 {
+body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs1, body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 {
   display: flex;
   width: 100%;
   gap: 10px;
 }
-body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs1 .imagenindex {
+body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs1 .imagenindex, body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 .imagenindex {
   height: 180px;
   width: 50%;
+  box-shadow: 2px 2px 6px #303136;
 }
-body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs1 .img1 {
+body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs1 .img1, body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 .img1 {
+  background-size: cover;
+  background-position: center;
   background-image: url(../imagenes/ventosas3.jpeg);
+}
+body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs1 .img2, body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 .img2 {
   background-size: cover;
   background-position: center;
-}
-body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs1 .img2 {
   background-image: url(../imagenes/guasha1.jpg);
-  background-size: cover;
-  background-position: center;
 }
-body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 {
-  display: flex;
-  width: 100%;
-  gap: 10px;
-}
-body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 .imagenindex {
+body .mainIndex .contenidoInferior .contenidoimgs2 .imagenindex {
   height: 180px;
   width: 50%;
 }
-body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 .img3 {
+body .mainIndex .contenidoInferior .contenidoimgs2 .img3 {
+  background-size: cover;
+  background-position: center;
   background-image: url(../imagenes/masajefacial1.jpg);
-  background-size: cover;
-  background-position: center;
 }
-body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 .img4 {
-  background-image: url(../imagenes/acupuntura1.jpg);
+body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
   background-size: cover;
   background-position: center;
+  background-image: url(../imagenes/acupuntura1.jpg);
 }
 
 @-webkit-keyframes slide {
@@ -355,14 +352,14 @@ body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 .img4 {
   .contenidoInferior .contenido2Imagenes {
     flex-direction: column;
   }
-  .contenidoInferior .contenido2Imagenes .contenidoimgs1 {
+  .contenidoInferior .contenido2Imagenes .contenidoimgs1, body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 {
     width: 100%;
     display: flex;
   }
-  .contenidoInferior .contenido2Imagenes .contenidoimgs1 .imagenindex .img1 {
+  .contenidoInferior .contenido2Imagenes .contenidoimgs1 .imagenindex .img1, body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 .imagenindex .img1 {
     width: 50%;
   }
-  .contenidoInferior .contenido2Imagenes .contenidoimgs1 .imagenindex .img2 {
+  .contenidoInferior .contenido2Imagenes .contenidoimgs1 .imagenindex .img2, body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 .imagenindex .img2 {
     width: 50%;
   }
   .contenidoInferior .contenido2Imagenes .contenidoimgs2 {
@@ -398,6 +395,8 @@ body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 .img4 {
   background-image: url(../imagenes/florenchina.jfif);
   background-size: cover;
   background-position: center;
+  box-shadow: 2px 2px 6px #303136;
+  z-index: 5;
 }
 
 .mainsobremi__texto {
@@ -707,7 +706,7 @@ body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 .img4 {
 
 .tituloterapias {
   background-color: #9094a8;
-  width: 100vw;
+  width: 100%;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -723,7 +722,7 @@ body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 .img4 {
   margin-top: 8px;
   font-weight: bold;
   padding: 15px;
-  text-shadow: 2px 2px 7px #f3ecde;
+  text-shadow: 2px 2px 7px #4b4763;
 }
 
 .cajaotrasterapias {
@@ -734,7 +733,7 @@ body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 .img4 {
 }
 
 .cajaflores__imagen {
-  background-image: url(../imagenes/floresdebach.jpg);
+  background-image: url(../imagenes/flores.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -762,7 +761,7 @@ body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 .img4 {
   font-size: 20px;
   text-align: center;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .cajaflores__texto p {
@@ -1138,7 +1137,7 @@ form {
   text-align: center;
 }
 
-/* ------------------------------------------------------------------MEDIA QUERIES PAGINA CONTACTO---------------------------------------------------------------------*/
+/* ----------------------------------------------------------MEDIA QUERIES PAGINA CONTACTO------------------------------------------------------------*/
 @media only screen and (max-width: 950px) {
   .mainform {
     margin-top: 0;
@@ -1222,6 +1221,25 @@ footer .logofooter {
 }
 footer .logofooter:hover {
   transform: rotate(2turn);
+}
+
+.sitemap {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 100%;
+  background-color: #d6cbb7;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.sitemap a {
+  color: black;
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  font-weight: bolder;
 }
 
 /* ------------------------------------------------------------------MEDIA QUERIES FOOTER---------------------------------------------------------------------*/
