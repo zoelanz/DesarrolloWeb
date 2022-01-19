@@ -88,7 +88,7 @@ body {
 
     .navbar-collapse {
         .navbar-nav {
-            height: 50px;
+            height: min-content;
             width: 100%;
             justify-content: center;
         }
