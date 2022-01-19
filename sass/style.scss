@@ -1119,7 +1119,7 @@ body {
 
 .mainform {
     width: 100%;
-    height: min-content;
+    height: 70vh;
     background-color: rgb(219, 212, 192);
     grid-row: 2/3;
 }
@@ -1143,7 +1143,8 @@ form {
 }
 
 .cajaform {
-    padding-top: 15px;
+    // padding-top: 15px;
+    padding-top: 60px;
     width: 100%;
     height: min-content;
     margin-left: 100px;
@@ -1229,6 +1230,7 @@ form {
     margin-left: 200px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgb(90, 95, 77);
+     margin-top: 70px;
 }
 
 .icono {
@@ -1288,6 +1290,7 @@ form {
 
     .mainform {
         margin-top: 0;
+        height: min-content;
     }
 
     .contenedorformydatos {

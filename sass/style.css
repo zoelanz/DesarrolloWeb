@@ -956,9 +956,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 /* ------------------------------------------------------------------CONTACTO---------------------------------------------------------------------*/
 .mainform {
   width: 100%;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
+  height: 70vh;
   background-color: #dbd4c0;
   grid-row: 2/3;
 }
@@ -984,7 +982,7 @@ form {
 }
 
 .cajaform {
-  padding-top: 15px;
+  padding-top: 60px;
   width: 100%;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -1086,6 +1084,7 @@ form {
   margin-left: 200px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px #5a5f4d;
+  margin-top: 70px;
 }
 
 .icono {
@@ -1143,6 +1142,9 @@ form {
 @media only screen and (max-width: 950px) {
   .mainform {
     margin-top: 0;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
   }
 
   .contenedorformydatos {
