@@ -603,8 +603,9 @@ body {
 
 .cajaterapia {
     padding: 2px;
-    background-color: #b5c58c;
-    background-position: center;
+    
+    background-color: #c7bfa4;
+   
     height: min-content;
     width: 100%;
     overflow: auto;
@@ -646,7 +647,7 @@ body {
 
 .cajaimagenizquierda {
     display: flex;
-    background-color: #b5c58c;
+    background-color: #c7bfa4;
     margin-top: 50px;
     width: 45%;
     height: 500px;
@@ -718,8 +719,7 @@ body {
 }
 
 .cajaimagenderecha {
-    background-color: #b5c58c;
-    background-size: cover;
+    background-color: #c7bfa4;
     margin-top: 50px;
     width: 45%;
     height: 500px;
@@ -1205,7 +1205,6 @@ form {
 
 .inputbotones:hover {
     background-color: #e3dac9;
-   
 }
 
 .cajaform textarea {

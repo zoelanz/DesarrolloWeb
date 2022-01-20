@@ -457,8 +457,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 
 .cajaterapia {
   padding: 2px;
-  background-color: #b5c58c;
-  background-position: center;
+  background-color: #c7bfa4;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -506,7 +505,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 
 .cajaimagenizquierda {
   display: flex;
-  background-color: #b5c58c;
+  background-color: #c7bfa4;
   margin-top: 50px;
   width: 45%;
   height: 500px;
@@ -578,8 +577,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 
 .cajaimagenderecha {
-  background-color: #b5c58c;
-  background-size: cover;
+  background-color: #c7bfa4;
   margin-top: 50px;
   width: 45%;
   height: 500px;
