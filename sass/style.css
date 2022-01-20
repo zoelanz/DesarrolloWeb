@@ -7,7 +7,7 @@ body {
 /* -------------------------------------------------------- NAV CON SASS-------------------------------------------------------*/
 .navbar {
   font-family: "Zen Kaku Gothic Antique", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bolder;
   letter-spacing: 2px;
   text-align: center;
@@ -132,7 +132,7 @@ body .mainIndex .contenidoSuperior .contenedorslide .slidertexto ul {
 body .mainIndex .contenidoSuperior .contenedorslide .slidertexto ul .contenido__texto {
   width: 100%;
   list-style: none;
-  background-color: #9094a8;
+  background-color: #b3b8c2;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -162,7 +162,7 @@ body .mainIndex .contenidoSuperior .contenedorslide .slidertexto ul .contenido__
   font-family: "Zen Kaku Gothic Antique", sans-serif;
   font-weight: 800;
   font-size: 13px;
-  background-color: #9094a8;
+  background-color: #b1b4c2;
   text-decoration: none;
   padding: 5px;
   letter-spacing: 2px;
@@ -393,7 +393,6 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 .mainsobremi__imagen {
   width: 40%;
   height: 500px;
-  background-color: rosybrown;
   background-image: url(../imagenes/florenchina.jfif);
   background-size: cover;
   background-position: center;
@@ -402,7 +401,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 
 .mainsobremi__texto {
-  background-color: #9094a8;
+  background-color: #b3b8c2;
   width: 60%;
   height: 500px;
 }
@@ -458,7 +457,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 
 .cajaterapia {
   padding: 2px;
-  background-color: #c7da9a;
+  background-color: #c3d498;
   background-position: center;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -507,8 +506,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 
 .cajaimagenizquierda {
   display: flex;
-  background-image: url(../imagenes/fondoabs5.jpg);
-  background-size: cover;
+  background-color: #c3d498;
   margin-top: 50px;
   width: 45%;
   height: 500px;
@@ -526,7 +524,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 
 .cajatextoderecha {
-  background-color: #9094a8;
+  background-color: #b3b8c2;
   width: 55%;
   height: 500px;
   display: flex;
@@ -559,7 +557,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 
 .cajatextoizquierda {
-  background-color: #9094a8;
+  background-color: #b3b8c2;
   width: 55%;
   height: 500px;
   margin-top: 7px;
@@ -580,7 +578,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 
 .cajaimagenderecha {
-  background-image: url(../imagenes/fondoabs5.jpg);
+  background-color: #c3d498;
   background-size: cover;
   margin-top: 50px;
   width: 45%;
@@ -707,7 +705,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 
 .tituloterapias {
-  background-color: #9094a8;
+  background-color: #b3b8c2;
   width: 100%;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -751,7 +749,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 
 .cajaflores__texto {
-  background-color: #9094a8;
+  background-color: #b3b8c2;
   width: 50%;
   height: 500px;
   overflow: auto;
@@ -956,9 +954,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 /* ------------------------------------------------------------------CONTACTO---------------------------------------------------------------------*/
 .mainform {
   width: 100%;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
+  height: 100vh;
   background-color: #dbd4c0;
   grid-row: 2/3;
 }
@@ -972,14 +968,16 @@ form {
 }
 
 .contenedorformydatos {
-  background-image: url(../imagenes/fondoabs5.jpg);
-  background-position: center;
+  background-color: #b3b8c2;
+  background-image: url(../imagenes/fondocara5.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
   padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
+  align-items: center;
+  height: 100%;
   width: 100%;
 }
 
@@ -994,22 +992,20 @@ form {
 }
 
 .cajaform h2 {
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-family: "Jost", sans-serif;
   color: black;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 2px;
-  margin-top: 0px;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  margin-bottom: 40px;
   font-weight: bold;
 }
 
 .cajaform input {
   width: 100%;
   text-align: center;
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-family: "Jost", sans-serif;
   color: black;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 2px;
 }
 
@@ -1023,19 +1019,16 @@ form {
 .forminput::-moz-placeholder {
   color: black;
   font-weight: bold;
-  font-style: italic;
 }
 
 .forminput:-ms-input-placeholder {
   color: black;
   font-weight: bold;
-  font-style: italic;
 }
 
 .forminput::placeholder {
   color: black;
   font-weight: bold;
-  font-style: italic;
 }
 
 .cajaform .inputbotones {
@@ -1044,7 +1037,7 @@ form {
   font-weight: bold;
   width: 110px;
   cursor: pointer;
-  background-color: #d8ebae;
+  background-color: #b3b8c2;
   border: 1px solid black;
   box-shadow: -2px 2px 6px #303136;
   font-size: 12px;
@@ -1058,15 +1051,15 @@ form {
 }
 
 .inputbotones:hover {
-  color: #fcfafa;
+  background-color: #d6cbb7;
 }
 
 .cajaform textarea {
   width: 100%;
   text-align: center;
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-family: "Jost", sans-serif;
   color: black;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 2px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1075,9 +1068,8 @@ form {
 }
 
 .redesydatos {
-  background-color: #c7da9a;
-  opacity: 0.9;
-  width: 60%;
+  background-color: #b3b8c2;
+  width: 100%;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -1086,33 +1078,8 @@ form {
   margin-left: 200px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px #5a5f4d;
-}
-
-.icono {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.tamañoiconowhapp {
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
-  margin-top: -25px;
-}
-
-.tamañoiconoinsta {
-  width: 18px;
-  height: 18px;
-  margin-left: 10px;
-  margin-top: -20px;
-}
-
-.tamañoiconomail {
-  width: 22px;
-  height: 22px;
-  margin-left: 10px;
-  margin-top: -20px;
 }
 
 .redesydatos__p1 {

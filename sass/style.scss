@@ -2,8 +2,8 @@
 
 // VARIABLES
 
-$celeste: rgb(144, 148, 168);
-$verde: rgb(199, 218, 154);
+$celeste: #b3b8c2;
+$verde: #c3d498;
 $body: #e3dac9;
 $footer: #d6cbb7;
 
@@ -47,7 +47,7 @@ body {
 .navbar {
     font: {
         family: 'Zen Kaku Gothic Antique', sans-serif;
-        size: 14px;
+        size: 13px;
         weight: bolder;
     }
 
@@ -198,7 +198,7 @@ body {
                         .contenido__texto {
                             width: 100%;
                             list-style: none;
-                            background-color: $celeste;
+                            background-color: #b3b8c2;
                             height: 500px;
                             display: flex;
                             flex-direction: column;
@@ -255,7 +255,7 @@ body {
                                     }
 
                                     ;
-                                    background-color: rgb(144, 148, 168);
+                                    background-color: #b1b4c2;
                                     text-decoration: none;
                                     padding: 5px;
                                     letter-spacing: 2px;
@@ -538,7 +538,6 @@ body {
 .mainsobremi__imagen {
     width: 40%;
     height: 500px;
-    background-color: rosybrown;
     background-image: url(../imagenes/florenchina.jfif);
     background-size: cover;
     background-position: center;
@@ -547,7 +546,7 @@ body {
 }
 
 .mainsobremi__texto {
-    background-color: rgb(144, 148, 168);
+    background-color: #b3b8c2;
     width: 60%;
     height: 500px;
 }
@@ -604,7 +603,7 @@ body {
 
 .cajaterapia {
     padding: 2px;
-    background-color: rgb(199, 218, 154);
+    background-color: #c3d498;
     background-position: center;
     height: min-content;
     width: 100%;
@@ -647,8 +646,9 @@ body {
 
 .cajaimagenizquierda {
     display: flex;
-    background-image: url(../imagenes/fondoabs5.jpg);
-    background-size: cover;
+    // background-image: url(../imagenes/fondoabs5.jpg);
+    // background-size: cover;
+    background-color: #c3d498;
     margin-top: 50px;
     width: 45%;
     height: 500px;
@@ -666,7 +666,7 @@ body {
 }
 
 .cajatextoderecha {
-    background-color: rgb(144, 148, 168);
+    background-color: #b3b8c2;
     width: 55%;
     height: 500px;
     display: flex;
@@ -699,7 +699,7 @@ body {
 }
 
 .cajatextoizquierda {
-    background-color: rgb(144, 148, 168);
+    background-color: #b3b8c2;
     width: 55%;
     height: 500px;
     margin-top: 7px;
@@ -720,7 +720,7 @@ body {
 }
 
 .cajaimagenderecha {
-    background-image: url(../imagenes/fondoabs5.jpg);
+    background-color: #c3d498;
     background-size: cover;
     margin-top: 50px;
     width: 45%;
@@ -845,7 +845,7 @@ body {
 }
 
 .tituloterapias {
-    background-color: rgb(144, 148, 168);
+    background-color: #b3b8c2;
     width: 100%;
     height: min-content;
 
@@ -888,7 +888,7 @@ body {
 }
 
 .cajaflores__texto {
-    background-color: rgb(144, 148, 168);
+    background-color: #b3b8c2;
     width: 50%;
     height: 500px;
     overflow: auto;
@@ -1119,7 +1119,7 @@ body {
 
 .mainform {
     width: 100%;
-    height: min-content;
+    height: 100vh;
     background-color: rgb(219, 212, 192);
     grid-row: 2/3;
 }
@@ -1133,13 +1133,18 @@ form {
 }
 
 .contenedorformydatos {
-    background-image: url(../imagenes/fondoabs5.jpg);
-    background-position: center;
+    background-color: #b3b8c2;
+    background-image: url(../imagenes/fondocara5.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
-    height: min-content;
+    align-items: center;
+    height: 100%;
     width: 100%;
+
 }
 
 .cajaform {
@@ -1148,25 +1153,25 @@ form {
     height: min-content;
     margin-left: 100px;
     justify-content: center;
+
+
 }
 
 .cajaform h2 {
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-family: 'Jost', sans-serif;
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 2px;
-    margin-top: 0px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin-bottom: 40px;
     font-weight: bold;
 }
 
 .cajaform input {
     width: 100%;
     text-align: center;
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-family: 'Jost', sans-serif;
     color: black;
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 2px;
 }
 
@@ -1180,7 +1185,7 @@ form {
 .forminput::placeholder {
     color: black;
     font-weight: bold;
-    font-style: italic;
+
 }
 
 .cajaform .inputbotones {
@@ -1189,7 +1194,7 @@ form {
     font-weight: bold;
     width: 110px;
     cursor: pointer;
-    background-color: rgb(216, 235, 174);
+    background-color: #b3b8c2;
     border: 1px solid black;
     box-shadow: -2px 2px 6px rgb(48, 49, 54);
     font-size: 12px;
@@ -1203,15 +1208,16 @@ form {
 }
 
 .inputbotones:hover {
-    color: rgb(252, 250, 250);
+    background-color: #d6cbb7;
+   
 }
 
 .cajaform textarea {
     width: 100%;
     text-align: center;
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-family: 'Jost', sans-serif;
     color: black;
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 2px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1220,43 +1226,18 @@ form {
 }
 
 .redesydatos {
-    background-color: rgb(199, 218, 154);
-    opacity: 0.9;
-    width: 60%;
+
+    background-color: #b3b8c2;
+    width: 100%;
     height: min-content;
     text-align: center;
     margin-right: 60px;
     margin-left: 200px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgb(90, 95, 77);
-    
-}
-
-.icono {
     display: flex;
-    justify-content: center;
     align-items: center;
-}
 
-.tamañoiconowhapp {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    margin-top: -25px;
-}
-
-.tamañoiconoinsta {
-    width: 18px;
-    height: 18px;
-    margin-left: 10px;
-    margin-top: -20px;
-}
-
-.tamañoiconomail {
-    width: 22px;
-    height: 22px;
-    margin-left: 10px;
-    margin-top: -20px;
 }
 
 .redesydatos__p1 {
