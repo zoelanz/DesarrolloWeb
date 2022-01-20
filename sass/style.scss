@@ -255,7 +255,7 @@ body {
                                     }
 
                                     ;
-                                    background-color: #b1b4c2;
+                                    background-color: #b3b8c2;
                                     text-decoration: none;
                                     padding: 5px;
                                     letter-spacing: 2px;
@@ -603,7 +603,7 @@ body {
 
 .cajaterapia {
     padding: 2px;
-    background-color: #c3d498;
+    background-color: #b5c58c;
     background-position: center;
     height: min-content;
     width: 100%;
@@ -646,9 +646,7 @@ body {
 
 .cajaimagenizquierda {
     display: flex;
-    // background-image: url(../imagenes/fondoabs5.jpg);
-    // background-size: cover;
-    background-color: #c3d498;
+    background-color: #b5c58c;
     margin-top: 50px;
     width: 45%;
     height: 500px;
@@ -720,7 +718,7 @@ body {
 }
 
 .cajaimagenderecha {
-    background-color: #c3d498;
+    background-color: #b5c58c;
     background-size: cover;
     margin-top: 50px;
     width: 45%;
@@ -1153,8 +1151,6 @@ form {
     height: min-content;
     margin-left: 100px;
     justify-content: center;
-
-
 }
 
 .cajaform h2 {
@@ -1208,7 +1204,7 @@ form {
 }
 
 .inputbotones:hover {
-    background-color: #d6cbb7;
+    background-color: #e3dac9;
    
 }
 
@@ -1226,8 +1222,7 @@ form {
 }
 
 .redesydatos {
-
-    background-color: #b3b8c2;
+    background-color: rgba(179, 184, 194,0.7);
     width: 100%;
     height: min-content;
     text-align: center;

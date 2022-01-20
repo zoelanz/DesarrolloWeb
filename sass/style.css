@@ -162,7 +162,7 @@ body .mainIndex .contenidoSuperior .contenedorslide .slidertexto ul .contenido__
   font-family: "Zen Kaku Gothic Antique", sans-serif;
   font-weight: 800;
   font-size: 13px;
-  background-color: #b1b4c2;
+  background-color: #b3b8c2;
   text-decoration: none;
   padding: 5px;
   letter-spacing: 2px;
@@ -457,7 +457,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 
 .cajaterapia {
   padding: 2px;
-  background-color: #c3d498;
+  background-color: #b5c58c;
   background-position: center;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -506,7 +506,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 
 .cajaimagenizquierda {
   display: flex;
-  background-color: #c3d498;
+  background-color: #b5c58c;
   margin-top: 50px;
   width: 45%;
   height: 500px;
@@ -578,7 +578,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 
 .cajaimagenderecha {
-  background-color: #c3d498;
+  background-color: #b5c58c;
   background-size: cover;
   margin-top: 50px;
   width: 45%;
@@ -1051,7 +1051,7 @@ form {
 }
 
 .inputbotones:hover {
-  background-color: #d6cbb7;
+  background-color: #e3dac9;
 }
 
 .cajaform textarea {
@@ -1068,7 +1068,7 @@ form {
 }
 
 .redesydatos {
-  background-color: #b3b8c2;
+  background-color: rgba(179, 184, 194, 0.7);
   width: 100%;
   height: -webkit-min-content;
   height: -moz-min-content;
