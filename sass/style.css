@@ -457,7 +457,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 
 .cajaterapia {
   padding: 2px;
-  background-color: #c7bfa4;
+  background-color: #d6d0b6;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -505,7 +505,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 
 .cajaimagenizquierda {
   display: flex;
-  background-color: #c7bfa4;
+  background-color: #d6d0b6;
   margin-top: 50px;
   width: 45%;
   height: 500px;
@@ -577,7 +577,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 
 .cajaimagenderecha {
-  background-color: #c7bfa4;
+  background-color: #d6d0b6;
   margin-top: 50px;
   width: 45%;
   height: 500px;
@@ -644,6 +644,10 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 @media only screen and (max-width: 1060px) {
   .mainmedicinachinaterapias {
     margin-top: 0;
+  }
+
+  .h3derecha {
+    padding-top: 100px;
   }
 }
 @media only screen and (max-width: 800px) {

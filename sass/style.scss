@@ -603,13 +603,12 @@ body {
 
 .cajaterapia {
     padding: 2px;
-    
-    background-color: #c7bfa4;
-   
+    background-color: #d6d0b6;
     height: min-content;
     width: 100%;
     overflow: auto;
     margin-bottom: 30px;
+
 }
 
 .contenidotextoimagen {
@@ -647,7 +646,7 @@ body {
 
 .cajaimagenizquierda {
     display: flex;
-    background-color: #c7bfa4;
+    background-color: #d6d0b6;
     margin-top: 50px;
     width: 45%;
     height: 500px;
@@ -719,7 +718,7 @@ body {
 }
 
 .cajaimagenderecha {
-    background-color: #c7bfa4;
+    background-color: #d6d0b6;
     margin-top: 50px;
     width: 45%;
     height: 500px;
@@ -788,6 +787,11 @@ body {
     .mainmedicinachinaterapias {
         margin-top: 0;
     }
+
+    .h3derecha {
+        padding-top: 100px;
+    }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -795,6 +799,8 @@ body {
         flex-direction: column;
         flex-wrap: nowrap;
     }
+
+
 
     .cajaterapia {
         margin-bottom: -30px;
@@ -810,7 +816,6 @@ body {
     }
 
     .cajatextoizquierda {
-
         width: 100%;
         height: min-content;
     }
@@ -1221,7 +1226,7 @@ form {
 }
 
 .redesydatos {
-    background-color: rgba(179, 184, 194,0.7);
+    background-color: rgba(179, 184, 194, 0.7);
     width: 100%;
     height: min-content;
     text-align: center;
