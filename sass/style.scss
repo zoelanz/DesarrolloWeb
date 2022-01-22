@@ -1137,7 +1137,7 @@ body {
 
 .mainform {
     width: 100%;
-    height: 100vh;
+    height: min-content;
     background-color: rgb(219, 212, 192);
     grid-row: 2/3;
 }
@@ -1253,7 +1253,8 @@ form {
     box-shadow: 2px 2px 10px #303136;
     display: flex;
     align-items: center;
-    padding: 40px;
+    padding: 20px;
+   
 
 }
 
@@ -1281,9 +1282,9 @@ form {
     text-align: center;
 }
 
- .paddinglink {  
+  .paddinglink {  
      padding-bottom: 20px;
-}
+ }
 
 
 .link {
