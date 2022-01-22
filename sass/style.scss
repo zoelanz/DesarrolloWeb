@@ -1137,7 +1137,7 @@ body {
 
 .mainform {
     width: 100%;
-    height: min-content;
+    height: 100vh;
     background-color: rgb(219, 212, 192);
     grid-row: 2/3;
 }
@@ -1181,7 +1181,6 @@ form {
     margin-bottom: 40px;
     font-weight: bold;
     text-shadow: 2px 2px 7px #f6f7fc;
-
 }
 
 .cajaform input {
@@ -1254,7 +1253,6 @@ form {
     display: flex;
     align-items: center;
     padding: 20px;
-   
 
 }
 
@@ -1296,27 +1294,36 @@ form {
 }
 
 
-
-
-
 /* ----------------------------------------------------------MEDIA QUERIES PAGINA CONTACTO------------------------------------------------------------*/
 
 @media only screen and (max-width: 950px) {
 
     .mainform {
         margin-top: 0;
+        height: min-content;
     }
+
+    
+.cajaform h2 {
+   
+    font-size: 18px;
+    // margin-top: 150px;
+}
+   
 
     .contenedorformydatos {
         width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+      
     }
 
     .cajaform {
         padding: 0;
         margin: 0;
+    
+        
     }
 
     .redesydatos {
@@ -1325,6 +1332,10 @@ form {
         justify-content: center;
         margin: 0;
         padding: 0;
+        margin-top: 10px;
+        
+        
+       
         
     }
 
