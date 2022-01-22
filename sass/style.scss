@@ -1248,7 +1248,7 @@ form {
     height: min-content;
     text-align: center;
     margin-right: 60px;
-    margin-left: 200px;
+    margin-left: 100px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px #303136;
     display: flex;
@@ -1281,8 +1281,8 @@ form {
     text-align: center;
 }
 
-.paddinglink {
-    padding-bottom: 20px;
+ .paddinglink {  
+     padding-bottom: 20px;
 }
 
 
@@ -1323,7 +1323,19 @@ form {
         height: min-content;
         justify-content: center;
         margin: 0;
+        padding: 0;
+        
     }
+
+    .redesydatos__p1 {
+        font-family: 'Jost', sans-serif;
+        color: black;
+        font-weight: bolder;
+        font-size: 10px;
+        letter-spacing: 2px;
+        padding: 20px 20px 4px 20px;
+    }
+    
 
     input .forminput {
         padding: 0px;
@@ -1331,7 +1343,15 @@ form {
     }
 
     form {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
+    }
+
+    .paddinglink {  
+        padding-bottom: 0px;
+   }
+
+    .link{
+        font-size: 12px;
     }
 }
 
