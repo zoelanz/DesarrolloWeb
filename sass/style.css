@@ -141,7 +141,7 @@ body .mainIndex .contenidoSuperior .contenedorslide .slidertexto ul .contenido__
 }
 body .mainIndex .contenidoSuperior .contenedorslide .slidertexto ul .contenido__texto .contenido__texto--titulo {
   font-family: "Encode Sans SC", sans-serif;
-  font-size: 40px;
+  font-size: 45px;
   margin-top: 20px;
   margin-bottom: 20px;
   color: white;
@@ -234,6 +234,8 @@ body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs1 .imagenin
   height: 180px;
   width: 50%;
   box-shadow: 2px 2px 6px #303136;
+  border-radius: 7px;
+  transition: ease 0.5s all;
 }
 body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs1 .img1, body .mainIndex .contenidoInferior .contenido2Imagenes .contenidoimgs2 .img1 {
   background-size: cover;
@@ -389,38 +391,36 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
   height: -moz-min-content;
   height: min-content;
 }
-
-.mainsobremi__imagen {
-  width: 40%;
-  height: 500px;
-  background-image: url(../imagenes/florenchina.jfif);
+.mainSobreMi .mainsobremi__imagen {
+  width: 45%;
+  height: 700px;
+  background-image: url(../imagenes/florenchina2.jfif);
   background-size: cover;
   background-position: center;
   box-shadow: 2px 2px 6px #303136;
   z-index: 5;
 }
-
-.mainsobremi__texto {
+.mainSobreMi .mainsobremi__texto {
   background-color: #b3b8c2;
-  width: 60%;
-  height: 500px;
+  width: 55%;
+  height: 700px;
+  overflow: auto;
 }
-
-.mainsobremi__texto h2 {
+.mainSobreMi .mainsobremi__texto h2 {
   text-align: center;
   font-family: "Zen Kaku Gothic Antique", sans-serif;
   color: black;
-  font-size: 25px;
-  letter-spacing: 2px;
+  font-size: 20px;
+  letter-spacing: 5px;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 60px;
   font-weight: bold;
+  text-shadow: 2px 2px 7px #4b4763;
 }
-
-.mainsobremi__texto p {
+.mainSobreMi .mainsobremi__texto p {
   font-family: "Jost", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   padding: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -436,13 +436,11 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
     flex-direction: column;
     margin-top: 0;
   }
-
-  .mainsobremi__texto {
+  .mainSobreMi .mainsobremi__texto {
     width: 100vw;
     height: auto;
   }
-
-  .mainsobremi__imagen {
+  .mainSobreMi .mainsobremi__imagen {
     width: 100vw;
   }
 }
@@ -457,7 +455,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 
 .cajaterapia {
   padding: 2px;
-  background-color: #d6d0b6;
+  background-color: #c4c0ac;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -505,7 +503,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 
 .cajaimagenizquierda {
   display: flex;
-  background-color: #d6d0b6;
+  background-color: #c4c0ac;
   margin-top: 50px;
   width: 45%;
   height: 500px;
@@ -577,7 +575,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 
 .cajaimagenderecha {
-  background-color: #d6d0b6;
+  background-color: #c4c0ac;
   margin-top: 50px;
   width: 45%;
   height: 500px;
@@ -874,7 +872,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 .item:hover {
   transform: scale(1.2);
   z-index: 500;
-  border: 2px solid #98adb8;
+  border: 1px solid #b3b8c2;
   box-shadow: 4px 4px 10px white;
 }
 
@@ -1000,10 +998,11 @@ form {
 .cajaform h2 {
   font-family: "Jost", sans-serif;
   color: black;
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 2px;
   margin-bottom: 40px;
   font-weight: bold;
+  text-shadow: 2px 2px 7px #f6f7fc;
 }
 
 .cajaform input {
@@ -1011,7 +1010,7 @@ form {
   text-align: center;
   font-family: "Jost", sans-serif;
   color: black;
-  font-size: 15px;
+  font-size: 13px;
   letter-spacing: 2px;
 }
 
@@ -1065,7 +1064,7 @@ form {
   text-align: center;
   font-family: "Jost", sans-serif;
   color: black;
-  font-size: 15px;
+  font-size: 13px;
   letter-spacing: 2px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1082,10 +1081,11 @@ form {
   text-align: center;
   margin-right: 60px;
   margin-left: 200px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px #5a5f4d;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px #303136;
   display: flex;
   align-items: center;
+  padding: 40px;
 }
 
 .redesydatos__p1 {
@@ -1110,6 +1110,18 @@ form {
   letter-spacing: 2px;
   line-height: 25px;
   text-align: center;
+}
+
+.paddinglink {
+  padding-bottom: 20px;
+}
+
+.link {
+  color: black;
+}
+
+.link:hover {
+  color: black;
 }
 
 /* ----------------------------------------------------------MEDIA QUERIES PAGINA CONTACTO------------------------------------------------------------*/
@@ -1210,10 +1222,11 @@ footer .logofooter:hover {
 }
 .sitemap a {
   color: black;
-  padding-bottom: 5px;
-  text-decoration: none;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  text-decoration: underline;
   font-family: "Jost", sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bolder;
 }
 
