@@ -926,6 +926,7 @@ body {
                 font-weight: bold;
                 margin-top: 40px;
             }
+
             p {
                 text-align: justify;
                 font-family: 'Jost', sans-serif;
@@ -953,30 +954,28 @@ body {
 
 @media only screen and (max-width: 950px) {
 
-    .cajaotrasterapias {
-        flex-direction: column;
-        width: 100%;
-    }
 
-    .cajaflores__texto {
-        width: 100%;
-    }
+    .mainotrasterapias {
+        .cajaotrasterapias {
+            flex-direction: column;
+            width: 100%;
 
-    .cajaflores__imagen {
-        width: 100%;
-    }
+            .cajaflores__texto {
+                width: 100%;
+            }
 
-    .masajesonoro__texto {
-        width: 100%;
-    }
+            .cajaflores__imagen {
+                width: 100%;
+            }
 
-    .masajesonoro__imagen {
-        width: 100%;
-        background-position: bottom;
-    }
+            .masajesonoro__imagen {
+                width: 100%;
+            }
+        }
 
-    #seccionsonoro {
-        flex-direction: column-reverse;
+        #seccionsonoro {
+            flex-direction: column-reverse;
+        }
     }
 }
 

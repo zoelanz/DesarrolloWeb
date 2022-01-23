@@ -784,29 +784,20 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
   }
 }
 @media only screen and (max-width: 950px) {
-  .cajaotrasterapias {
+  .mainotrasterapias .cajaotrasterapias {
     flex-direction: column;
     width: 100%;
   }
-
-  .cajaflores__texto {
+  .mainotrasterapias .cajaotrasterapias .cajaflores__texto {
     width: 100%;
   }
-
-  .cajaflores__imagen {
+  .mainotrasterapias .cajaotrasterapias .cajaflores__imagen {
     width: 100%;
   }
-
-  .masajesonoro__texto {
+  .mainotrasterapias .cajaotrasterapias .masajesonoro__imagen {
     width: 100%;
   }
-
-  .masajesonoro__imagen {
-    width: 100%;
-    background-position: bottom;
-  }
-
-  #seccionsonoro {
+  .mainotrasterapias #seccionsonoro {
     flex-direction: column-reverse;
   }
 }
