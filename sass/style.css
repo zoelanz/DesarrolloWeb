@@ -1,7 +1,10 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&family=Jost:wght@300&family=Poiret+One&family=Sawarabi+Gothic&family=Zen+Kaku+Gothic+Antique&display=swap");
 body {
   background-color: #e3dac9;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* -------------------------------------------------------- NAV CON SASS-------------------------------------------------------*/
@@ -690,10 +693,6 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
   }
 }
 /* ------------------------------------------------------------------OTRAS TERAPIAS---------------------------------------------------------------------*/
-.headertextos .contenedorh1 h1 {
-  font-weight: bold;
-}
-
 .mainotrasterapias {
   width: 100%;
   grid-row: 2/3;
@@ -702,21 +701,18 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
   height: min-content;
   background-color: #e3dac9;
 }
-
-.otrasterapias {
+.mainotrasterapias .otrasterapias {
   width: 100%;
   margin-bottom: 5px;
 }
-
-.tituloterapias {
+.mainotrasterapias .otrasterapias .tituloterapias {
   background-color: #b3b8c2;
   width: 100%;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
 }
-
-.otrasterapias h2 {
+.mainotrasterapias .otrasterapias .tituloterapias h2 {
   width: 100%;
   text-align: center;
   font-family: "Zen Kaku Gothic Antique", sans-serif;
@@ -728,15 +724,13 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
   padding: 15px;
   text-shadow: 2px 2px 7px #4b4763;
 }
-
-.cajaotrasterapias {
+.mainotrasterapias .cajaotrasterapias {
   width: 100%;
   height: 500px;
   display: flex;
   margin-top: -8px;
 }
-
-.cajaflores__imagen {
+.mainotrasterapias .cajaotrasterapias .cajaflores__imagen {
   background-image: url(../imagenes/flores.jpg);
   background-size: cover;
   background-position: center;
@@ -746,20 +740,23 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
   z-index: 3;
   box-shadow: 2px 2px 6px #303136;
 }
-
-.tamañoimagenotrasterapias {
-  width: 100%;
+.mainotrasterapias .cajaotrasterapias .masajesonoro__imagen {
+  background-image: url(../imagenes/masajesonoro2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
   height: 500px;
+  z-index: 3;
+  box-shadow: -2px 2px 6px #303136;
 }
-
-.cajaflores__texto {
+.mainotrasterapias .cajaotrasterapias .cajaflores__texto {
   background-color: #b3b8c2;
   width: 50%;
   height: 500px;
   overflow: auto;
 }
-
-.cajaflores__texto h3 {
+.mainotrasterapias .cajaotrasterapias .cajaflores__texto h3 {
   font-family: "Jost", sans-serif;
   color: black;
   font-size: 20px;
@@ -767,8 +764,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
   font-weight: bold;
   margin-top: 40px;
 }
-
-.cajaflores__texto p {
+.mainotrasterapias .cajaotrasterapias .cajaflores__texto p {
   text-align: justify;
   font-family: "Jost", sans-serif;
   font-size: 16px;
@@ -779,34 +775,6 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
   padding: 0 80px 0 80px;
   margin-top: 20px;
   line-height: 18px;
-}
-
-.masajesonoro__texto {
-  background-color: #9094a8;
-  width: 50%;
-  height: 500px;
-  overflow: auto;
-}
-
-.masajesonoro__texto p {
-  text-align: justify;
-  font-family: "Jost", sans-serif;
-  font-size: 16px;
-  font-weight: 900;
-  color: black;
-  letter-spacing: 2px;
-  word-spacing: 1px;
-  padding: 0 80px 0 80px;
-}
-
-.masajesonoro__imagen {
-  background-image: url(../imagenes/masajesonoro2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 50%;
-  height: 500px;
-  box-shadow: -2px 2px 6px #303136;
 }
 
 /* -----------------------------------------------------------MEDIA QUERIES OTRAS TERAPIAS---------------------------------------------------------------------*/
@@ -1012,6 +980,7 @@ form {
   color: black;
   font-size: 13px;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .forminput {
@@ -1070,6 +1039,7 @@ form {
   padding-bottom: 10px;
   border: none;
   border-bottom: 1px solid black;
+  font-weight: bold;
 }
 
 .redesydatos {
@@ -1095,6 +1065,10 @@ form {
   font-size: 15px;
   letter-spacing: 2px;
   padding: 20px 20px 4px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .redesydatos__p2 h3 {
@@ -1258,14 +1232,18 @@ footer .logofooter:hover {
 
 /* ------------------------------------------------------------------MEDIA QUERIES FOOTER---------------------------------------------------------------------*/
 @media only screen and (max-width: 430px) {
-  .contenedorFooter__boton {
-    font-size: 11px;
-    margin-left: -25px;
+  footer .contenedorFooter__boton {
+    font-size: 12px;
+    margin-left: -30px;
   }
-
-  .logofooter {
+  footer .logofooter {
     width: 40px;
     height: 40px;
     margin-top: -80px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .sitemap a {
+    font-size: 9px;
   }
 }/*# sourceMappingURL=style.css.map */
