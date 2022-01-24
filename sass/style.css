@@ -986,7 +986,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 
 /* -------------------------------------------------------MEDIA QUERIES PAGINA GALERIA CON SASS------------------------------------------------------*/
 @media only screen and (max-width: 1000px) {
-  .contenedorGaleria {
+  .mainGaleria .contenedorGaleria {
     width: 100%;
     height: 100%;
     display: grid;
@@ -1000,7 +1000,7 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
   }
 }
 @media only screen and (max-width: 750px) {
-  .contenedorGaleria {
+  .mainGaleria .contenedorGaleria {
     width: 100%;
     height: 100%;
     display: grid;
