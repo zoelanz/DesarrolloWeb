@@ -48,6 +48,9 @@ html {
     scroll-behavior: smooth;
 }
 
+/* --------------------------------------------------------------- ANIMACION DE CARGA---------------------------------------------------------*/  
+
+
 .cargando{
     height: 100vh;
     width: 100vw;
@@ -639,9 +642,11 @@ body {
     .mainsobremi__imagen {
         width: 45%;
         height: 700px;
-        background-image: url(../imagenes/florenchina2.jfif);
-        background-size: cover;
-        background-position: center;
+        background: {
+            image:url(../imagenes/florenchina2.jfif);
+            size: cover;
+            position: center;
+        };
         box-shadow: 2px 2px 6px rgb(48, 49, 54);
         z-index: 5;
     }
@@ -653,26 +658,37 @@ body {
         overflow: auto;
 
         h2 {
+            margin: {
+                left: 10px;
+                right: 10px;
+                top: 60px
+            };
+            font: {
+                family:'Zen Kaku Gothic Antique', sans-serif;
+                size: 20px;
+                weight:bold;
+            };
             text-align: center;
-            font-family: 'Zen Kaku Gothic Antique', sans-serif;
             color: black;
-            font-size: 20px;
             letter-spacing: 5px;
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-top: 60px;
-            font-weight: bold;
             text-shadow: 2px 2px 7px #4b4763;
         }
 
         p {
-            font-family: 'Jost', sans-serif;
-            font-size: 16px;
+
+            font: {
+                family:'Jost', sans-serif;
+                size: 16px;
+                weight:bold;
+            };
+
+            margin: {
+                left: 10px;
+                right: 10px;
+                top: 10px
+            };
+
             padding: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-top: 10px;
-            font-weight: bold;
             line-height: 35px;
             text-align: justify;
         }
@@ -716,26 +732,29 @@ body {
         margin-bottom: 30px;
 
         h2 {
-            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font: {
+                family:'Zen Kaku Gothic Antique', sans-serif;
+                size: 20px;
+                weight:bold;
+            };
             color: black;
             letter-spacing: 2px;
-            font-size: 20px;
             text-align: center;
-            font-weight: bold;
             margin-top: 10px;
         }
 
         .parrafoMedicina {
+            font: {
+                family:'Jost', sans-serif;
+                size: 15px;
+                weight:600;
+            };
             height: 100px;
-            font-family: 'Jost', sans-serif;
             color: black;
-            font-size: 15px;
             text-align: center;
-            font-weight: 600;
             letter-spacing: 2px;
             word-spacing: 1px;
         }
-
     }
 
     .contenidotextoimagen {
@@ -758,36 +777,44 @@ body {
                 border-radius: 0px 10px 10px 0px;
 
                 .cajaimagenizquierda2 {
-                    background-image: url(../imagenes/giphyguasha.gif);
-                    background-size: cover;
-                    background-position: center;
+                    background: {
+                        image: url(../imagenes/giphyguasha.gif);
+                        size: cover;
+                        position: center;
+                    };
                     width: 100%;
                     height: 400px;
                     margin-left: 20px;
                 }
 
                 .cajaimagenizquierda3 {
-                    background-image: url(../imagenes/giphyreflexologia.gif);
-                    background-size: cover;
-                    background-position: center;
+                    background: {
+                        image: url(../imagenes/giphyreflexologia.gif);
+                        size: cover;
+                        position: center;
+                    };
                     width: 100%;
                     height: 400px;
                     margin-left: 20px;
                 }
 
                 .cajaimagenizquierda4 {
-                    background-image: url(../imagenes/giphyacupuntura.gif);
-                    background-size: cover;
-                    background-position: center;
+                    background: {
+                        image: url(../imagenes/giphyacupuntura.gif);
+                        size: cover;
+                        position: center;
+                    };
                     width: 100%;
                     height: 400px;
                     margin-left: 20px;
                 }
 
                 .cajaimagenizquierda5 {
-                    background-image: url(../imagenes/giphyqigong.gif);
-                    background-size: cover;
-                    background-position: center;
+                    background: {
+                        image:  url(../imagenes/giphyqigong.gif);
+                        size: cover;
+                        position: center;
+                    };
                     width: 100%;
                     height: 400px;
                     margin-left: 20px;
@@ -807,18 +834,22 @@ body {
                 border-radius: 10px 0 0 10px;
 
                 .h3derecha {
-                    font-family: 'Encode Sans SC', sans-serif;
+                    font: {
+                        family:'Encode Sans SC', sans-serif;
+                        size: 25px;
+                        weight:bold;
+                    };
                     color: black;
-                    font-size: 25px;
                     text-align: center;
-                    font-weight: bold;
                 }
 
                 .parrafos {
+                    font: {
+                        family: 'Jost', sans-serif;
+                        size: 16px;
+                        weight:900;
+                    };
                     text-align: center;
-                    font-family: 'Jost', sans-serif;
-                    font-size: 16px;
-                    font-weight: 900;
                     color: black;
                     letter-spacing: 2px;
                     word-spacing: 1px;
@@ -841,18 +872,23 @@ body {
                 border-radius: 0px 10px 10px 0px;
 
                 .h3izquierda {
-                    font-family: 'Encode Sans SC', sans-serif;
+                    font: {
+                        family:'Encode Sans SC', sans-serif;
+                        size: 25px;
+                        weight:bold;
+                    };
                     color: black;
-                    font-size: 25px;
                     text-align: center;
-                    font-weight: bold;
                 }
 
                 .parrafos {
+                    font: {
+                        family:'Jost', sans-serif;
+                        size: 16px;
+                        weight:900;
+                    };
+
                     text-align: center;
-                    font-family: 'Jost', sans-serif;
-                    font-size: 16px;
-                    font-weight: 900;
                     color: black;
                     letter-spacing: 2px;
                     word-spacing: 1px;
@@ -871,28 +907,33 @@ body {
                 border-radius: 10px 0 0 10px;
 
                 .cajaimagenderecha2 {
-                    background-image: url(../imagenes/giphyventosas.gif);
-                    background-size: cover;
-                    background-position: center;
+                    background: {
+                        image: url(../imagenes/giphyventosas.gif);
+                        size: cover;
+                        position: center;
+                    };
                     width: 100%;
                     height: 400px;
                     margin-right: 20px;
                 }
 
                 .cajaimagenderecha3 {
-                    background-image: url(../imagenes/giphyauriculoterapia.gif);
-                    background-size: cover;
-                    background-position: center;
+                    background: {
+                        image: url(../imagenes/giphyauriculoterapia.gif);
+                        size: cover;
+                        position: center;
+                    };
                     width: 100%;
                     height: 400px;
                     margin-right: 20px;
                 }
 
-
                 .cajaimagenderecha4 {
-                    background-image: url(../imagenes/giphymoxa.gif);
-                    background-size: cover;
-                    background-position: center;
+                    background: {
+                        image: url(../imagenes/giphymoxa.gif);
+                        size: cover;
+                        position: center;
+                    };
                     width: 100%;
                     height: 400px;
                     margin-right: 20px;
@@ -942,8 +983,6 @@ body {
                     .h3derecha {
                         padding-top: 40px;
                     }
-
-
                 }
 
                 .cajatextoizquierda {
@@ -986,18 +1025,18 @@ body {
             height: min-content;
 
             h2 {
+                font: {
+                    family:'Zen Kaku Gothic Antique', sans-serif;
+                    size: 20px;
+                    weight:bold;
+                };
                 width: 100%;
                 text-align: center;
-                font-family: 'Zen Kaku Gothic Antique', sans-serif;
                 color: black;
-                font-size: 20px;
                 letter-spacing: 5px;
                 margin-top: 8px;
-                font-weight: bold;
                 padding: 15px;
                 text-shadow: 2px 2px 7px #4b4763;
-
-
             }
         }
     }
@@ -1009,10 +1048,12 @@ body {
         margin-top: -8px;
 
         .cajaflores__imagen {
-            background-image: url(../imagenes/flores.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background: {
+                image: url(../imagenes/flores.jpg);
+                size: cover;
+                position: center;
+                repeat:no-repeat;
+            };
             width: 50%;
             height: 500px;
             z-index: 3;
@@ -1020,10 +1061,12 @@ body {
         }
 
         .masajesonoro__imagen {
-            background-image: url(../imagenes/masajesonoro2.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background: {
+                image: url(../imagenes/masajesonoro2.jpg);
+                size: cover;
+                position: center;
+                repeat:no-repeat;
+            };
             width: 50%;
             height: 500px;
             z-index: 3;
@@ -1037,19 +1080,23 @@ body {
             overflow: auto;
 
             h3 {
-                font-family: 'Jost', sans-serif;
+                font: {
+                    family:'Jost', sans-serif;
+                    size: 20px;
+                    weight:bold;
+                };
                 color: black;
-                font-size: 20px;
                 text-align: center;
-                font-weight: bold;
                 margin-top: 40px;
             }
 
             p {
+                font: {
+                    family:'Jost', sans-serif;
+                    size: 16px;
+                    weight:900;
+                };
                 text-align: justify;
-                font-family: 'Jost', sans-serif;
-                font-size: 16px;
-                font-weight: 900;
                 color: black;
                 letter-spacing: 2px;
                 word-spacing: 1px;
@@ -1132,7 +1179,6 @@ body {
                 box-shadow: 4px 4px 10px white;
             }
         }
-
 
         .item1 {
             grid-area: item1;
@@ -1239,13 +1285,17 @@ body {
     grid-row: 2/3;
 
     .contenedorformydatos {
-        background-color: $celeste;
-        background-image: url(../imagenes/fondocara5.jpg);
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: contain;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        background: {
+            color: $celeste;
+            image:  url(../imagenes/fondocara5.jpg);
+            size: contain;
+            position: left;
+            repeat:no-repeat;
+        };
+        padding:{
+            top: 30px;
+            bottom: 30px
+        };
         display: flex;
         align-items: center;
         height: 100%;
@@ -1266,37 +1316,43 @@ body {
                 align-items: center;
 
                 h2 {
-                    font-family: 'Jost', sans-serif;
+                    font: {
+                        family:'Jost', sans-serif;
+                        size: 25px;
+                        weight:bold;
+                    };
                     color: black;
-                    font-size: 25px;
                     letter-spacing: 2px;
                     margin-bottom: 40px;
-                    font-weight: bold;
                     text-shadow: 2px 2px 7px #f6f7fc;
                 }
 
                 input {
+                    font: {
+                        family:'Jost', sans-serif;
+                        size: 13px;
+                        weight:bold;
+                    };
                     width: 100%;
                     text-align: center;
-                    font-family: 'Jost', sans-serif;
-                    color: black;
-                    font-size: 13px;
+                    color: black; 
                     letter-spacing: 2px;
-                    font-weight: bold;
                 }
 
                 textarea {
+                    font: {
+                        family:'Jost', sans-serif;
+                        size: 13px;
+                        weight:bold;
+                    };
                     width: 100%;
                     text-align: center;
-                    font-family: 'Jost', sans-serif;
                     color: black;
-                    font-size: 13px;
                     letter-spacing: 2px;
                     padding-top: 10px;
                     padding-bottom: 10px;
                     border: none;
-                    border-bottom: 1px solid black;
-                    font-weight: bold;
+                    border-bottom: 1px solid black;  
                 }
 
                 .forminput {
@@ -1317,6 +1373,10 @@ body {
                     gap: 80px;
 
                     .inputbotones {
+                        font: {
+                            size: 12px;
+                            weight:bold;
+                        };
                         color: black;
                         text-shadow: 2px 2px 5px $footer;
                         font-weight: bold;
@@ -1325,25 +1385,24 @@ body {
                         background-color: $celeste;
                         border: 1px solid black;
                         box-shadow: -2px 2px 6px #303136;
-                        font-size: 12px;
                         border-radius: 5px;
-
                         &:hover {
                             background-color: $body;
                         }
                     }
                 }
-
             }
         }
 
         .redesydatos {
+            margin: {
+               right: 60px;
+               left: 100px;
+            };
             background-color: rgba(179, 184, 194, 0.7);
             width: 100%;
             height: min-content;
             text-align: center;
-            margin-right: 60px;
-            margin-left: 100px;
             border-radius: 20px;
             box-shadow: 2px 2px 10px #303136;
             display: flex;
@@ -1351,10 +1410,12 @@ body {
             padding: 20px;
 
             .redesydatos__p1 {
-                font-family: 'Jost', sans-serif;
+                font: {
+                    family:'Jost', sans-serif;
+                    size: 15px;
+                    weight:bolder;
+                };
                 color: black;
-                font-weight: bolder;
-                font-size: 15px;
                 letter-spacing: 2px;
                 padding: 20px 20px 4px 20px;
                 width: 100%;
@@ -1375,16 +1436,21 @@ body {
                 }
 
                 .redesydatos__p2 h3 {
-                    font-family: 'Jost', sans-serif;
-                    font-size: 22px;
+                    font: {
+                        family:'Jost', sans-serif;
+                        size: 22px;
+                        weight:bold;
+                    };
                     letter-spacing: 2px;
-                    font-weight: bold;
                 }
 
 
                 .parrafomensaje {
-                    font-family: 'Jost', sans-serif;
-                    font-size: 14px;
+                    font: {
+                        family:'Jost', sans-serif;
+                        size: 14px;
+                        weight:900;
+                    };
                     letter-spacing: 2px;
                     line-height: 25px;
                     text-align: center;
@@ -1423,7 +1489,6 @@ body {
                         padding: 0px;
                         margin: 0px;
                     }
-
                 }
             }
 
@@ -1436,10 +1501,12 @@ body {
                 margin-top: 10px;
 
                 .redesydatos__p1 {
-                    font-family: 'Jost', sans-serif;
+                    font: {
+                        family:'Jost', sans-serif;
+                        size: 10px;
+                        weight:bolder;
+                    };
                     color: black;
-                    font-weight: bolder;
-                    font-size: 10px;
                     letter-spacing: 2px;
                     padding: 20px 20px 4px 20px;
 
@@ -1450,7 +1517,6 @@ body {
                             font-size: 12px;
                         }
                     }
-
                 }
             }
         }

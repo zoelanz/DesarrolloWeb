@@ -8,6 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* --------------------------------------------------------------- ANIMACION DE CARGA---------------------------------------------------------*/
 .cargando {
   height: 100vh;
   width: 100vw;
@@ -531,25 +532,25 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
   overflow: auto;
 }
 .mainSobreMi .mainsobremi__texto h2 {
-  text-align: center;
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  color: black;
-  font-size: 20px;
-  letter-spacing: 5px;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 60px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 20px;
   font-weight: bold;
+  text-align: center;
+  color: black;
+  letter-spacing: 5px;
   text-shadow: 2px 2px 7px #4b4763;
 }
 .mainSobreMi .mainsobremi__texto p {
   font-family: "Jost", sans-serif;
   font-size: 16px;
-  padding: 10px;
+  font-weight: bold;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
-  font-weight: bold;
+  padding: 10px;
   line-height: 35px;
   text-align: justify;
 }
@@ -588,20 +589,20 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 .mainmedicinachinaterapias .cajaterapia h2 {
   font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
   color: black;
   letter-spacing: 2px;
-  font-size: 20px;
   text-align: center;
-  font-weight: bold;
   margin-top: 10px;
 }
 .mainmedicinachinaterapias .cajaterapia .parrafoMedicina {
-  height: 100px;
   font-family: "Jost", sans-serif;
-  color: black;
   font-size: 15px;
-  text-align: center;
   font-weight: 600;
+  height: 100px;
+  color: black;
+  text-align: center;
   letter-spacing: 2px;
   word-spacing: 1px;
 }
@@ -674,16 +675,16 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 .mainmedicinachinaterapias .contenidotextoimagen .cajatextoimagen .cajatextoderecha .h3derecha {
   font-family: "Encode Sans SC", sans-serif;
-  color: black;
   font-size: 25px;
-  text-align: center;
   font-weight: bold;
+  color: black;
+  text-align: center;
 }
 .mainmedicinachinaterapias .contenidotextoimagen .cajatextoimagen .cajatextoderecha .parrafos {
-  text-align: center;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 900;
+  text-align: center;
   color: black;
   letter-spacing: 2px;
   word-spacing: 1px;
@@ -704,16 +705,16 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 .mainmedicinachinaterapias .contenidotextoimagen .cajatextoimagen .cajatextoizquierda .h3izquierda {
   font-family: "Encode Sans SC", sans-serif;
-  color: black;
   font-size: 25px;
-  text-align: center;
   font-weight: bold;
+  color: black;
+  text-align: center;
 }
 .mainmedicinachinaterapias .contenidotextoimagen .cajatextoimagen .cajatextoizquierda .parrafos {
-  text-align: center;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 900;
+  text-align: center;
   color: black;
   letter-spacing: 2px;
   word-spacing: 1px;
@@ -824,14 +825,14 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
   height: min-content;
 }
 .mainotrasterapias .otrasterapias .tituloterapias h2 {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
   width: 100%;
   text-align: center;
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
   color: black;
-  font-size: 20px;
   letter-spacing: 5px;
   margin-top: 8px;
-  font-weight: bold;
   padding: 15px;
   text-shadow: 2px 2px 7px #4b4763;
 }
@@ -869,17 +870,17 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 .mainotrasterapias .cajaotrasterapias .cajaflores__texto h3 {
   font-family: "Jost", sans-serif;
-  color: black;
   font-size: 20px;
-  text-align: center;
   font-weight: bold;
+  color: black;
+  text-align: center;
   margin-top: 40px;
 }
 .mainotrasterapias .cajaotrasterapias .cajaflores__texto p {
-  text-align: justify;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 900;
+  text-align: justify;
   color: black;
   letter-spacing: 2px;
   word-spacing: 1px;
@@ -1022,9 +1023,9 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 .mainform .contenedorformydatos {
   background-color: #b3b8c2;
   background-image: url(../imagenes/fondocara5.jpg);
+  background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
-  background-size: contain;
   padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
@@ -1050,34 +1051,34 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 .mainform .contenedorformydatos .cajaform form h2 {
   font-family: "Jost", sans-serif;
-  color: black;
   font-size: 25px;
+  font-weight: bold;
+  color: black;
   letter-spacing: 2px;
   margin-bottom: 40px;
-  font-weight: bold;
   text-shadow: 2px 2px 7px #f6f7fc;
 }
 .mainform .contenedorformydatos .cajaform form input {
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
   width: 100%;
   text-align: center;
-  font-family: "Jost", sans-serif;
   color: black;
-  font-size: 13px;
   letter-spacing: 2px;
-  font-weight: bold;
 }
 .mainform .contenedorformydatos .cajaform form textarea {
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
   width: 100%;
   text-align: center;
-  font-family: "Jost", sans-serif;
   color: black;
-  font-size: 13px;
   letter-spacing: 2px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: none;
   border-bottom: 1px solid black;
-  font-weight: bold;
 }
 .mainform .contenedorformydatos .cajaform form .forminput {
   background-color: transparent;
@@ -1103,6 +1104,8 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
   gap: 80px;
 }
 .mainform .contenedorformydatos .cajaform form .botonesenviar .inputbotones {
+  font-size: 12px;
+  font-weight: bold;
   color: black;
   text-shadow: 2px 2px 5px #d6cbb7;
   font-weight: bold;
@@ -1111,21 +1114,20 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
   background-color: #b3b8c2;
   border: 1px solid black;
   box-shadow: -2px 2px 6px #303136;
-  font-size: 12px;
   border-radius: 5px;
 }
 .mainform .contenedorformydatos .cajaform form .botonesenviar .inputbotones:hover {
   background-color: #e3dac9;
 }
 .mainform .contenedorformydatos .redesydatos {
+  margin-right: 60px;
+  margin-left: 100px;
   background-color: rgba(179, 184, 194, 0.7);
   width: 100%;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
   text-align: center;
-  margin-right: 60px;
-  margin-left: 100px;
   border-radius: 20px;
   box-shadow: 2px 2px 10px #303136;
   display: flex;
@@ -1134,9 +1136,9 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 }
 .mainform .contenedorformydatos .redesydatos .redesydatos__p1 {
   font-family: "Jost", sans-serif;
-  color: black;
-  font-weight: bolder;
   font-size: 15px;
+  font-weight: bolder;
+  color: black;
   letter-spacing: 2px;
   padding: 20px 20px 4px 20px;
   width: 100%;
@@ -1156,12 +1158,13 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
 .mainform .contenedorformydatos .redesydatos .redesydatos__p1 .redesydatos__p2 h3 {
   font-family: "Jost", sans-serif;
   font-size: 22px;
-  letter-spacing: 2px;
   font-weight: bold;
+  letter-spacing: 2px;
 }
 .mainform .contenedorformydatos .redesydatos .redesydatos__p1 .parrafomensaje {
   font-family: "Jost", sans-serif;
   font-size: 14px;
+  font-weight: 900;
   letter-spacing: 2px;
   line-height: 25px;
   text-align: center;
@@ -1207,9 +1210,9 @@ body .mainIndex .contenidoInferior .contenidoimgs2 .img4 {
   }
   .mainform .contenedorformydatos .redesydatos .redesydatos__p1 {
     font-family: "Jost", sans-serif;
-    color: black;
-    font-weight: bolder;
     font-size: 10px;
+    font-weight: bolder;
+    color: black;
     letter-spacing: 2px;
     padding: 20px 20px 4px 20px;
   }
