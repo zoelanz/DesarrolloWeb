@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&family=Jost:wght@300&family=Poiret+One&family=Sawarabi+Gothic&family=Zen+Kaku+Gothic+Antique&display=swap');
 
-// VARIABLES
+// VARIABLES -------------------------------------------
 
 $celeste: #b3b8c2;
-$verde: #c3d498;
+$verde: #c4c0ac;
 $body: #e3dac9;
 $footer: #d6cbb7;
 
-//aplicando mixin
+// APLICANDO MIXINS-------------------------------------
 
 @mixin tamañoImg ($height, $width) {
     height: $height;
@@ -32,11 +32,13 @@ $footer: #d6cbb7;
     width: 300%;
 }
 
-//aplicando maps
+// APLICANDO MAPS--------------------------------------
 
 $slidetexto:(titulo:45px,
     parrafo: 17px,
     boton: 13px, );
+
+/* --------------------------------------------------------------- PROPIEDADES GENERALES---------------------------------------------------------*/  
 
 body {
     background-color: $body;
@@ -46,7 +48,99 @@ html {
     scroll-behavior: smooth;
 }
 
-/* -------------------------------------------------------- NAV CON SASS-------------------------------------------------------*/
+.cargando{
+    height: 100vh;
+    width: 100vw;
+    background-color: $body;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 100;
+    animation-name: pantalladecarga;
+    animation-duration: 6s;
+    top: -100vh;
+    
+
+    img{
+        height: 15%;
+        width: auto;
+    }
+
+    .barra{
+        height: 0px;
+        width: 0%;
+        background-color: black;
+        animation-name: carga;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+    }
+
+    @keyframes carga {
+        
+        0%{
+            width:0%;
+            height: 3px;
+        }
+
+        15%{
+            width: 15%;
+        }
+
+        32%{
+            width: 35%;
+        }
+
+        48%{
+            width: 37%;
+        }
+
+        60%{
+            width: 55%;
+        }
+
+        65%{
+            width: 80%;
+            height: 3px;
+        }
+
+        67%{
+            width: 80%;
+            height: 3px;
+        }
+
+        69%{
+            height: 0;
+        }
+
+        100%{ 
+            width: 80%;
+            height: 0;
+        }
+        
+    }
+
+    @keyframes pantalladecarga {
+
+        0%{
+            top:0;
+
+        }
+
+        70%{
+            top: 0;
+
+        }
+
+        100%{
+            top: -100vh;
+        } 
+    }
+}
+
+
+/* ------------------------------------------------------------------ NAV CON SASS---------------------------------------------------------------*/
 
 .navbar {
     font: {
@@ -59,11 +153,9 @@ html {
     letter-spacing: 2px;
     text-align: center;
     display: inline-block;
-    background-color: #e3dac9 !important;
+    background-color: $body !important;
     height: 120px;
     width: 100%;
-
-
 
     .navbar-brand {
         img {
@@ -182,7 +274,7 @@ html {
 
 body {
     .mainIndex {
-        background-color: #e3dac9;
+        background-color: $body;
         grid-row: 2/3;
         width: 100%;
         height: min-content;
@@ -203,7 +295,7 @@ body {
                         .contenido__texto {
                             width: 100%;
                             list-style: none;
-                            background-color: #b3b8c2;
+                            background-color: $celeste;
                             height: 500px;
                             display: flex;
                             flex-direction: column;
@@ -261,7 +353,7 @@ body {
                                     }
 
                                     ;
-                                    background-color: #b3b8c2;
+                                    background-color: $celeste;
                                     text-decoration: none;
                                     padding: 5px;
                                     letter-spacing: 2px;
@@ -354,8 +446,6 @@ body {
                         transition: ease 0.5s all;
                     }
 
-
-
                     .img1 {
                         @include formatoImg (cover, center);
                         background-image: url(../imagenes/ventosas3.jpeg);
@@ -367,7 +457,6 @@ body {
                         @include formatoImg (cover, center);
 
                         background-image: url(../imagenes/guasha1.jpg);
-
                     }
 
                     ;
@@ -431,7 +520,7 @@ body {
 
 
 
-/* -----------------------------------------------------------MEDIA QUERIES INDEX CON SASS--------------------------------------------------*/
+/* -----------------------------------------------------------MEDIA QUERIES INDEX CON SASS-----------------------------------------------------*/
 
 @media only screen and (max-width: 1180px) {
 
@@ -539,7 +628,7 @@ body {
     }
 }
 
-/* ------------------------------------------------------------------PAGINA SOBRE MI---------------------------------------------------------------------*/
+/* -------------------------------------------------------------PAGINA SOBRE MI CON SASS--------------------------------------------------*/
 
 .mainSobreMi {
     width: 100%;
@@ -558,7 +647,7 @@ body {
     }
 
     .mainsobremi__texto {
-        background-color: #b3b8c2;
+        background-color: $celeste;
         width: 55%;
         height: 700px;
         overflow: auto;
@@ -593,7 +682,7 @@ body {
 }
 
 
-/* ----------------------------------------------------------------MEDIA QUERIES SOBRE MI---------------------------------------------------------------------*/
+/* ----------------------------------------------------------MEDIA QUERIES SOBRE MI CON SASS--------------------------------------------------*/
 
 @media only screen and (max-width: 960px) {
     .mainSobreMi {
@@ -611,259 +700,288 @@ body {
     }
 }
 
-/* ------------------------------------------------------------------PAGINA MEDICINA CHINA---------------------------------------------------------------*/
+/* ------------------------------------------------------------PAGINA MEDICINA CHINA CON SASS---------------------------------------------*/
 
 .mainmedicinachinaterapias {
     width: 100%;
     grid-row: 2/3;
     height: min-content;
+
+    .cajaterapia {
+        padding: 2px;
+        background-color: $verde;
+        height: min-content;
+        width: 100%;
+        overflow: auto;
+        margin-bottom: 30px;
+
+        h2 {
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            color: black;
+            letter-spacing: 2px;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .parrafoMedicina {
+            height: 100px;
+            font-family: 'Jost', sans-serif;
+            color: black;
+            font-size: 15px;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 2px;
+            word-spacing: 1px;
+        }
+
+    }
+
+    .contenidotextoimagen {
+        width: 100%;
+        height: min-content;
+
+        .cajatextoimagen {
+            width: 100%;
+            height: min-content;
+            display: flex;
+            flex-wrap: wrap;
+
+            .cajaimagenizquierda {
+                display: flex;
+                background-color: $verde;
+                margin-top: 50px;
+                width: 45%;
+                height: 500px;
+                z-index: 10;
+                border-radius: 0px 10px 10px 0px;
+
+                .cajaimagenizquierda2 {
+                    background-image: url(../imagenes/giphyguasha.gif);
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 400px;
+                    margin-left: 20px;
+                }
+
+                .cajaimagenizquierda3 {
+                    background-image: url(../imagenes/giphyreflexologia.gif);
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 400px;
+                    margin-left: 20px;
+                }
+
+                .cajaimagenizquierda4 {
+                    background-image: url(../imagenes/giphyacupuntura.gif);
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 400px;
+                    margin-left: 20px;
+                }
+
+                .cajaimagenizquierda5 {
+                    background-image: url(../imagenes/giphyqigong.gif);
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 400px;
+                    margin-left: 20px;
+                }
+            }
+
+            .cajatextoderecha {
+                background-color: $celeste;
+                width: 55%;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 7px;
+                justify-content: center;
+                align-items: center;
+                overflow: auto;
+                border-radius: 10px 0 0 10px;
+
+                .h3derecha {
+                    font-family: 'Encode Sans SC', sans-serif;
+                    color: black;
+                    font-size: 25px;
+                    text-align: center;
+                    font-weight: bold;
+                }
+
+                .parrafos {
+                    text-align: center;
+                    font-family: 'Jost', sans-serif;
+                    font-size: 16px;
+                    font-weight: 900;
+                    color: black;
+                    letter-spacing: 2px;
+                    word-spacing: 1px;
+                    line-height: 30px;
+                    padding: 0 20px 0 20px;
+                }
+
+            }
+
+            .cajatextoizquierda {
+                background-color: $celeste;
+                width: 55%;
+                height: 500px;
+                margin-top: 7px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                overflow: auto;
+                border-radius: 0px 10px 10px 0px;
+
+                .h3izquierda {
+                    font-family: 'Encode Sans SC', sans-serif;
+                    color: black;
+                    font-size: 25px;
+                    text-align: center;
+                    font-weight: bold;
+                }
+
+                .parrafos {
+                    text-align: center;
+                    font-family: 'Jost', sans-serif;
+                    font-size: 16px;
+                    font-weight: 900;
+                    color: black;
+                    letter-spacing: 2px;
+                    word-spacing: 1px;
+                    line-height: 30px;
+                    padding: 0 20px 0 20px;
+                }
+            }
+
+            .cajaimagenderecha {
+                background-color: $verde;
+                margin-top: 50px;
+                width: 45%;
+                height: 500px;
+                display: flex;
+                z-index: 10;
+                border-radius: 10px 0 0 10px;
+
+                .cajaimagenderecha2 {
+                    background-image: url(../imagenes/giphyventosas.gif);
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 400px;
+                    margin-right: 20px;
+                }
+
+                .cajaimagenderecha3 {
+                    background-image: url(../imagenes/giphyauriculoterapia.gif);
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 400px;
+                    margin-right: 20px;
+                }
+
+
+                .cajaimagenderecha4 {
+                    background-image: url(../imagenes/giphymoxa.gif);
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 400px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
 }
 
-.cajaterapia {
-    padding: 2px;
-    background-color: #c4c0ac;
-    height: min-content;
-    width: 100%;
-    overflow: auto;
-    margin-bottom: 30px;
-}
-
-.contenidotextoimagen {
-    width: 100%;
-    height: min-content;
-}
-
-.mainmedicinachinaterapias h2 {
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    color: black;
-    letter-spacing: 2px;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.mainmedicinachinaterapias .parrafoMedicina {
-    height: 100px;
-    font-family: 'Jost', sans-serif;
-    color: black;
-    font-size: 15px;
-    text-align: center;
-    font-weight: 600;
-    letter-spacing: 2px;
-    word-spacing: 1px;
-}
-
-.cajatextoimagen {
-    width: 100%;
-    height: min-content;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.cajaimagenizquierda {
-    display: flex;
-    background-color: #c4c0ac;
-    margin-top: 50px;
-    width: 45%;
-    height: 500px;
-    z-index: 10;
-    border-radius: 0px 10px 10px 0px;
-}
-
-.cajaimagenizquierda2 {
-    background-image: url(../imagenes/giphyguasha.gif);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 400px;
-    margin-left: 20px;
-}
-
-.cajatextoderecha {
-    background-color: #b3b8c2;
-    width: 55%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 7px;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-    border-radius: 10px 0 0 10px;
-}
-
-.h3derecha {
-    font-family: 'Encode Sans SC', sans-serif;
-    color: black;
-    font-size: 25px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.parrafos {
-    text-align: center;
-    font-family: 'Jost', sans-serif;
-    font-size: 16px;
-    font-weight: 900;
-    color: black;
-    letter-spacing: 2px;
-    word-spacing: 1px;
-    line-height: 30px;
-    padding: 0 20px 0 20px;
-}
-
-.cajatextoizquierda {
-    background-color: #b3b8c2;
-    width: 55%;
-    height: 500px;
-    margin-top: 7px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-    border-radius: 0px 10px 10px 0px;
-}
-
-.h3izquierda {
-    font-family: 'Encode Sans SC', sans-serif;
-    color: black;
-    font-size: 25px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.cajaimagenderecha {
-    background-color: #c4c0ac;
-    margin-top: 50px;
-    width: 45%;
-    height: 500px;
-    display: flex;
-    z-index: 10;
-    border-radius: 10px 0 0 10px;
-}
-
-.cajaimagenderecha2 {
-    background-image: url(../imagenes/giphyventosas.gif);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 400px;
-    margin-right: 20px;
-}
-
-.cajaimagenizquierda3 {
-    background-image: url(../imagenes/giphyreflexologia.gif);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 400px;
-    margin-left: 20px;
-}
-
-.cajaimagenderecha3 {
-    background-image: url(../imagenes/giphyauriculoterapia.gif);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 400px;
-    margin-right: 20px;
-}
-
-.cajaimagenizquierda4 {
-    background-image: url(../imagenes/giphyacupuntura.gif);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 400px;
-    margin-left: 20px;
-}
-
-.cajaimagenderecha4 {
-    background-image: url(../imagenes/giphymoxa.gif);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 400px;
-    margin-right: 20px;
-}
-
-.cajaimagenizquierda5 {
-    background-image: url(../imagenes/giphyqigong.gif);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 400px;
-    margin-left: 20px;
-}
-
-/* -----------------------------------------------------------MEDIA QUERIES PAGINA MEDICINA CHINA---------------------------------------------------------------------*/
+/* -----------------------------------------------------MEDIA QUERIES PAGINA MEDICINA CHINA CON SASS-------------------------------------*/
 
 @media only screen and (max-width: 1060px) {
     .mainmedicinachinaterapias {
         margin-top: 0;
-    }
 
-    .h3derecha {
-        padding-top: 100px;
-    }
+        .h3derecha {
+            padding-top: 100px;
+        }
 
-
-    .h3izquierda {
-        padding-top: 100px;
+        .h3izquierda {
+            padding-top: 100px;
+        }
     }
 
 }
 
 @media only screen and (max-width: 800px) {
-    .cajatextoimagen {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
 
-    .cajaterapia {
-        margin-bottom: -30px;
-    }
+    .mainmedicinachinaterapias {
+        .cajaterapia {
+            margin-bottom: -30px;
+        }
 
-    .cajaimagenizquierda {
-        width: 100%;
-    }
+        .contenidotextoimagen {
+            .cajatextoimagen {
+                flex-direction: column;
+                flex-wrap: nowrap;
 
-    .cajatextoderecha {
-        width: 100%;
-        height: min-content;
-    }
+                .cajaimagenizquierda {
+                    width: 100%;
+                }
 
-    .cajatextoizquierda {
-        width: 100%;
-        height: min-content;
-    }
+                .cajatextoderecha {
+                    width: 100%;
+                    height: min-content;
 
-    .medicinachinareverse {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+                    .h3derecha {
+                        padding-top: 40px;
+                    }
 
-    .cajaimagenderecha {
-        width: 100%;
+
+                }
+
+                .cajatextoizquierda {
+                    width: 100%;
+                    height: min-content;
+
+                    .h3izquierda {
+                        padding-top: 40px;
+                    }
+                }
+
+                .cajaimagenderecha {
+                    width: 100%;
+                }
+            }
+
+            .medicinachinareverse {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
     }
 }
 
-/* ------------------------------------------------------------------OTRAS TERAPIAS---------------------------------------------------------------------*/
+/* --------------------------------------------------------------OTRAS TERAPIAS CON SASS---------------------------------------------------------*/
 
 .mainotrasterapias {
     width: 100%;
     grid-row: 2/3;
     height: min-content;
-    background-color: #e3dac9;
+    background-color: $body;
 
     .otrasterapias {
         width: 100%;
         margin-bottom: 5px;
 
         .tituloterapias {
-            background-color: #b3b8c2;
+            background-color: $celeste;
             width: 100%;
             height: min-content;
 
@@ -913,7 +1031,7 @@ body {
         }
 
         .cajaflores__texto {
-            background-color: #b3b8c2;
+            background-color: $celeste;
             width: 50%;
             height: 500px;
             overflow: auto;
@@ -943,7 +1061,7 @@ body {
     }
 }
 
-/* -----------------------------------------------------------MEDIA QUERIES OTRAS TERAPIAS---------------------------------------------------------------------*/
+/* ---------------------------------------------------------MEDIA QUERIES OTRAS TERAPIAS CON SASS----------------------------------------------*/
 
 @media only screen and (max-width: 1060px) {
 
@@ -953,7 +1071,6 @@ body {
 }
 
 @media only screen and (max-width: 950px) {
-
 
     .mainotrasterapias {
         .cajaotrasterapias {
@@ -979,96 +1096,97 @@ body {
     }
 }
 
-/* ------------------------------------------------------------------GALERIA---------------------------------------------------------------------*/
+/* ------------------------------------------------------------------GALERIA CON SASS---------------------------------------------------------------------*/
 
 .mainGaleria {
     background-color: rgb(243, 239, 230);
     grid-row: 2/3;
     height: 600px;
     padding: 20px 20px 40px 20px;
+
+    .contenedorGaleria {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+            "item1 item2 item3 item4"
+            "item5 item6 item7 item4"
+            "item5 item8 item9 item10"
+        ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 8px;
+        justify-content: center;
+        margin: 10px 0px 30px 0px;
+
+        .item {
+            border-radius: 5px;
+            transition: ease 0.5s all;
+            background-size: cover;
+            background-position: center;
+
+            &:hover {
+                transform: scale(1.2);
+                z-index: 500;
+                border: 1px solid $celeste;
+                box-shadow: 4px 4px 10px white;
+            }
+        }
+
+
+        .item1 {
+            grid-area: item1;
+            background-image: url(../imagenes/ventosas2.jpg);
+        }
+
+        .item2 {
+            grid-area: item2;
+            background-image: url(../imagenes/reflexologia2.jpg);
+        }
+
+        .item3 {
+            grid-area: item3;
+            background-image: url(../imagenes/masajefacial1.jpg);
+        }
+
+        .item4 {
+            grid-area: item4;
+            background-image: url(../imagenes/guasha3.jpg);
+        }
+
+        .item5 {
+            grid-area: item5;
+            background-image: url(../imagenes/guasha1.jpg);
+        }
+
+        .item6 {
+            grid-area: item6;
+            background-image: url(../imagenes/auriculoterapia.jpg);
+        }
+
+        .item7 {
+            grid-area: item7;
+            background-image: url(../imagenes/masajefacial2.jpg);
+        }
+
+        .item8 {
+            grid-area: item8;
+            background-image: url(../imagenes/acupuntura1.jpg);
+        }
+
+        .item9 {
+            grid-area: item9;
+            background-image: url(../imagenes/ventosas3.jpeg);
+        }
+
+        .item10 {
+            grid-area: item10;
+            background-image: url(../imagenes/acupuntura2.jpg);
+        }
+    }
 }
 
-.contenedorGaleria {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-areas:
-        "item1 item2 item3 item4"
-        "item5 item6 item7 item4"
-        "item5 item8 item9 item10"
-    ;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 8px;
-    justify-content: center;
-    margin: 10px 0px 30px 0px;
-}
-
-.item {
-    border-radius: 5px;
-    transition: ease 0.5s all;
-    background-size: cover;
-    background-position: center;
-}
-
-.item:hover {
-    transform: scale(1.2);
-    z-index: 500;
-    border: 1px solid #b3b8c2;
-    box-shadow: 4px 4px 10px white;
-}
-
-.item1 {
-    grid-area: item1;
-    background-image: url(../imagenes/ventosas2.jpg);
-}
-
-.item2 {
-    grid-area: item2;
-    background-image: url(../imagenes/reflexologia2.jpg);
-}
-
-.item3 {
-    grid-area: item3;
-    background-image: url(../imagenes/masajefacial1.jpg);
-}
-
-.item4 {
-    grid-area: item4;
-    background-image: url(../imagenes/guasha3.jpg);
-}
-
-.item5 {
-    grid-area: item5;
-    background-image: url(../imagenes/guasha1.jpg);
-}
-
-.item6 {
-    grid-area: item6;
-    background-image: url(../imagenes/auriculoterapia.jpg);
-}
-
-.item7 {
-    grid-area: item7;
-    background-image: url(../imagenes/masajefacial2.jpg);
-}
-
-.item8 {
-    grid-area: item8;
-    background-image: url(../imagenes/acupuntura1.jpg);
-}
-
-.item9 {
-    grid-area: item9;
-    background-image: url(../imagenes/ventosas3.jpeg);
-}
-
-.item10 {
-    grid-area: item10;
-    background-image: url(../imagenes/acupuntura2.jpg);
-}
-
-/* ------------------------------------------------------------------MEDIA QUERIES PAGINA GALERIA---------------------------------------------------------------------*/
+/* -------------------------------------------------------MEDIA QUERIES PAGINA GALERIA CON SASS------------------------------------------------------*/
 
 @media only screen and (max-width: 1000px) {
 
@@ -1112,256 +1230,242 @@ body {
     }
 }
 
-/* ------------------------------------------------------------------CONTACTO---------------------------------------------------------------------*/
+/* -------------------------------------------------------------CONTACTO CON SASS-------------------------------------------------------------*/
 
 .mainform {
     width: 100%;
     height: 100vh;
     background-color: rgb(219, 212, 192);
     grid-row: 2/3;
+
+    .contenedorformydatos {
+        background-color: $celeste;
+        background-image: url(../imagenes/fondocara5.jpg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        .cajaform {
+            padding-top: 15px;
+            width: 100%;
+            height: min-content;
+            margin-left: 100px;
+            justify-content: center;
+
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                align-items: center;
+
+                h2 {
+                    font-family: 'Jost', sans-serif;
+                    color: black;
+                    font-size: 25px;
+                    letter-spacing: 2px;
+                    margin-bottom: 40px;
+                    font-weight: bold;
+                    text-shadow: 2px 2px 7px #f6f7fc;
+                }
+
+                input {
+                    width: 100%;
+                    text-align: center;
+                    font-family: 'Jost', sans-serif;
+                    color: black;
+                    font-size: 13px;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                }
+
+                textarea {
+                    width: 100%;
+                    text-align: center;
+                    font-family: 'Jost', sans-serif;
+                    color: black;
+                    font-size: 13px;
+                    letter-spacing: 2px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    font-weight: bold;
+                }
+
+                .forminput {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    outline: none;
+                }
+
+                .forminput::placeholder {
+                    color: black;
+                    font-weight: bold;
+                }
+
+                .botonesenviar {
+                    height: 30px;
+                    display: flex;
+                    gap: 80px;
+
+                    .inputbotones {
+                        color: black;
+                        text-shadow: 2px 2px 5px $footer;
+                        font-weight: bold;
+                        width: 110px;
+                        cursor: pointer;
+                        background-color: $celeste;
+                        border: 1px solid black;
+                        box-shadow: -2px 2px 6px #303136;
+                        font-size: 12px;
+                        border-radius: 5px;
+
+                        &:hover {
+                            background-color: $body;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .redesydatos {
+            background-color: rgba(179, 184, 194, 0.7);
+            width: 100%;
+            height: min-content;
+            text-align: center;
+            margin-right: 60px;
+            margin-left: 100px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px #303136;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+
+            .redesydatos__p1 {
+                font-family: 'Jost', sans-serif;
+                color: black;
+                font-weight: bolder;
+                font-size: 15px;
+                letter-spacing: 2px;
+                padding: 20px 20px 4px 20px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .paddinglink {
+                    padding-bottom: 20px;
+
+                    .link {
+                        color: black;
+
+                        &:hover {
+                            color: black;
+                        }
+                    }
+                }
+
+                .redesydatos__p2 h3 {
+                    font-family: 'Jost', sans-serif;
+                    font-size: 22px;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                }
+
+
+                .parrafomensaje {
+                    font-family: 'Jost', sans-serif;
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-}
-
-.contenedorformydatos {
-    background-color: #b3b8c2;
-    background-image: url(../imagenes/fondocara5.jpg);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-
-}
-
-.cajaform {
-    padding-top: 15px;
-    width: 100%;
-    height: min-content;
-    margin-left: 100px;
-    justify-content: center;
-}
-
-.cajaform h2 {
-    font-family: 'Jost', sans-serif;
-    color: black;
-    font-size: 25px;
-    letter-spacing: 2px;
-    margin-bottom: 40px;
-    font-weight: bold;
-    text-shadow: 2px 2px 7px #f6f7fc;
-}
-
-.cajaform input {
-    width: 100%;
-    text-align: center;
-    font-family: 'Jost', sans-serif;
-    color: black;
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: bold;
-}
-
-.forminput {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid black;
-    outline: none;
-}
-
-.forminput::placeholder {
-    color: black;
-    font-weight: bold;
-}
-
-.cajaform .inputbotones {
-    color: black;
-    text-shadow: 2px 2px 5px #d6cbb7;
-    font-weight: bold;
-    width: 110px;
-    cursor: pointer;
-    background-color: #b3b8c2;
-    border: 1px solid black;
-    box-shadow: -2px 2px 6px #303136;
-    font-size: 12px;
-    border-radius: 5px;
-}
-
-.botonesenviar {
-    height: 30px;
-    display: flex;
-    gap: 80px;
-}
-
-.inputbotones:hover {
-    background-color: #e3dac9;
-}
-
-.cajaform textarea {
-    width: 100%;
-    text-align: center;
-    font-family: 'Jost', sans-serif;
-    color: black;
-    font-size: 13px;
-    letter-spacing: 2px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: none;
-    border-bottom: 1px solid black;
-    font-weight: bold;
-}
-
-.redesydatos {
-    background-color: rgba(179, 184, 194, 0.7);
-    width: 100%;
-    height: min-content;
-    text-align: center;
-    margin-right: 60px;
-    margin-left: 100px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px #303136;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-
-}
-
-.redesydatos__p1 {
-    font-family: 'Jost', sans-serif;
-    color: black;
-    font-weight: bolder;
-    font-size: 15px;
-    letter-spacing: 2px;
-    padding: 20px 20px 4px 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.redesydatos__p2 h3 {
-    font-family: 'Jost', sans-serif;
-    font-size: 22px;
-    letter-spacing: 2px;
-    font-weight: bold;
-}
-
-.parrafomensaje {
-    font-family: 'Jost', sans-serif;
-    font-size: 14px;
-    letter-spacing: 2px;
-    line-height: 25px;
-    text-align: center;
-}
-
-.paddinglink {
-    padding-bottom: 20px;
-}
-
-
-.link {
-    color: black;
-}
-
-.link:hover {
-    color: black;
-}
-
-
-/* ----------------------------------------------------------MEDIA QUERIES PAGINA CONTACTO------------------------------------------------------------*/
+/* ----------------------------------------------------------MEDIA QUERIES PAGINA CONTACTO CON SASS------------------------------------------------------------*/
 
 @media only screen and (max-width: 950px) {
 
     .mainform {
         margin-top: 0;
         height: min-content;
-    }
 
+        .contenedorformydatos {
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-    .cajaform h2 {
+            .cajaform {
+                padding: 0;
+                margin: 0;
 
-        font-size: 18px;
-        // margin-top: 150px;
-    }
+                form {
+                    margin-bottom: 15px;
 
+                    h2 {
+                        font-size: 18px;
+                    }
 
-    .contenedorformydatos {
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+                    .forminput {
+                        padding: 0px;
+                        margin: 0px;
+                    }
 
-    }
+                }
+            }
 
-    .cajaform {
-        padding: 0;
-        margin: 0;
+            .redesydatos {
+                width: 100%;
+                height: min-content;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                margin-top: 10px;
 
+                .redesydatos__p1 {
+                    font-family: 'Jost', sans-serif;
+                    color: black;
+                    font-weight: bolder;
+                    font-size: 10px;
+                    letter-spacing: 2px;
+                    padding: 20px 20px 4px 20px;
 
-    }
+                    .paddinglink {
+                        padding-bottom: 0px;
 
-    .redesydatos {
-        width: 100%;
-        height: min-content;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        margin-top: 10px;
+                        .link {
+                            font-size: 12px;
+                        }
+                    }
 
-
-
-
-    }
-
-    .redesydatos__p1 {
-        font-family: 'Jost', sans-serif;
-        color: black;
-        font-weight: bolder;
-        font-size: 10px;
-        letter-spacing: 2px;
-        padding: 20px 20px 4px 20px;
-    }
-
-
-    input .forminput {
-        padding: 0px;
-        margin: 0px;
-    }
-
-    form {
-        margin-bottom: 15px;
-    }
-
-    .paddinglink {
-        padding-bottom: 0px;
-    }
-
-    .link {
-        font-size: 12px;
+                }
+            }
+        }
     }
 }
 
-/* ------------------------------------------------------------------FOOTER---------------------------------------------------------------------*/
+/* ------------------------------------------------------------------FOOTER CON SASS---------------------------------------------------------------------*/
 
 footer {
-    background-color: #d6cbb7;
+    background-color: $footer;
     grid-row: 3/4;
     display: flex;
     flex-direction: column;
     z-index: 20;
     height: 110px;
-
-
 
     .contenedorFooter__boton {
         font: {
@@ -1420,7 +1524,7 @@ footer {
 .sitemap {
     height: min-content;
     width: 100%;
-    background-color: #d6cbb7;
+    background-color: $footer;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -1429,7 +1533,7 @@ footer {
         color: black;
         padding-bottom: 10px;
         padding-top: 15px;
-        text-decoration: underline;
+        text-decoration: overline;
 
         font: {
             family: 'Jost', sans-serif;
@@ -1439,13 +1543,13 @@ footer {
     }
 }
 
-/* ------------------------------------------------------------------MEDIA QUERIES FOOTER---------------------------------------------------------------------*/
+/* ------------------------------------------------------------------MEDIA QUERIES FOOTER CON SASS---------------------------------------------------------------------*/
 
 @media only screen and (max-width: 430px) {
     footer {
         .contenedorFooter__boton {
-            font-size: 12px;
-            margin-left: -30px;
+            font-size: 9px;
+            margin-left: -40px;
         }
 
         .logofooter {
@@ -1453,14 +1557,10 @@ footer {
             height: 40px;
             margin-top: -80px;
         }
-
     }
 
-
-}
-
-@media only screen and (max-width: 430px) {
     .sitemap a {
-        font-size: 9px;
+        font-size: 8px;
     }
 }
+
