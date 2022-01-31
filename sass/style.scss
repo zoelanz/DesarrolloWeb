@@ -38,7 +38,7 @@ $slidetexto:(titulo:45px,
     parrafo: 17px,
     boton: 13px, );
 
-/* --------------------------------------------------------------- PROPIEDADES GENERALES---------------------------------------------------------*/  
+/* --------------------------------------------------------------- PROPIEDADES GENERALES---------------------------------------------------------*/
 
 body {
     background-color: $body;
@@ -48,10 +48,9 @@ html {
     scroll-behavior: smooth;
 }
 
-/* --------------------------------------------------------------- ANIMACION DE CARGA---------------------------------------------------------*/  
+/* --------------------------------------------------------------- ANIMACION DE CARGA---------------------------------------------------------*/
 
-
-.cargando{
+.cargando {
     height: 100vh;
     width: 100vw;
     background-color: $body;
@@ -64,14 +63,14 @@ html {
     animation-name: pantalladecarga;
     animation-duration: 6s;
     top: -100vh;
-    
 
-    img{
+
+    img {
         height: 15%;
         width: auto;
     }
 
-    .barra{
+    .barra {
         height: 0px;
         width: 0%;
         background-color: black;
@@ -81,67 +80,66 @@ html {
     }
 
     @keyframes carga {
-        
-        0%{
-            width:0%;
+
+        0% {
+            width: 0%;
             height: 2px;
         }
 
-        15%{
+        15% {
             width: 15%;
         }
 
-        32%{
+        32% {
             width: 35%;
         }
 
-        48%{
+        48% {
             width: 37%;
         }
 
-        60%{
+        60% {
             width: 55%;
         }
 
-        65%{
+        65% {
             width: 80%;
             height: 2px;
         }
 
-        67%{
+        67% {
             width: 80%;
             height: 2px;
         }
 
-        69%{
+        69% {
             height: 0;
         }
 
-        100%{ 
+        100% {
             width: 80%;
             height: 0;
         }
-        
+
     }
 
     @keyframes pantalladecarga {
 
-        0%{
-            top:0;
-
-        }
-
-        70%{
+        0% {
             top: 0;
 
         }
 
-        100%{
+        70% {
+            top: 0;
+
+        }
+
+        100% {
             top: -100vh;
-        } 
+        }
     }
 }
-
 
 /* ------------------------------------------------------------------ NAV CON SASS---------------------------------------------------------------*/
 
@@ -157,7 +155,7 @@ html {
     text-align: center;
     display: inline-block;
     background-color: $body !important;
-    box-shadow: 2px 2px 10px rgb(51, 52, 54) ;
+    box-shadow: 2px 2px 10px rgb(51, 52, 54);
     height: 120px;
     width: 100%;
     z-index: 50;
@@ -182,7 +180,8 @@ html {
     }
 
     .navbar-toggler {
-            border: none;
+        border: none;
+
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
@@ -308,7 +307,6 @@ body {
                             justify-content: center;
                             text-align: center;
 
-
                             .contenido__texto--titulo {
                                 font: {
                                     family: 'Encode Sans SC', sans-serif;
@@ -325,7 +323,6 @@ body {
                                 ;
                                 color: white;
                             }
-
 
                             .contenido__texto--parrafo {
                                 font: {
@@ -460,7 +457,7 @@ body {
                         &:hover {
                             background-image: url(../imagenes/ventosas1.jpg);
                         }
-                        
+
 
                     }
 
@@ -468,7 +465,7 @@ body {
                         @include formatoImg (cover, center);
 
                         background-image: url(../imagenes/guasha1.jpg);
-                        
+
                         &:hover {
                             background-image: url(../imagenes/guasha2.jpg);
                         }
@@ -508,7 +505,6 @@ body {
         }
     }
 }
-
 
 @keyframes slide {
 
@@ -568,6 +564,7 @@ body {
                                 .contenido__texto--parrafo {
                                     font-size: 16px;
                                     line-height: 35px;
+
                                     margin: {
                                         left: 30px;
                                         right: 30px;
@@ -628,7 +625,6 @@ body {
     }
 }
 
-
 @media only screen and (max-width: 425px) {
     body .mainIndex .contenidoSuperior .contenedorslide .slider ul li img {
         height: 250px;
@@ -646,11 +642,14 @@ body {
     .mainsobremi__imagen {
         width: 45%;
         height: 700px;
+
         background: {
-            image:url(../imagenes/florenchina2.jfif);
+            image: url(../imagenes/florenchina2.jfif);
             size: cover;
             position: center;
-        };
+        }
+
+        ;
         box-shadow: 2px 2px 6px rgb(48, 49, 54);
         z-index: 5;
     }
@@ -666,12 +665,17 @@ body {
                 left: 10px;
                 right: 10px;
                 top: 60px
-            };
+            }
+
+            ;
+
             font: {
-                family:'Zen Kaku Gothic Antique', sans-serif;
+                family: 'Zen Kaku Gothic Antique', sans-serif;
                 size: 20px;
-                weight:bold;
-            };
+                weight: bold;
+            }
+
+            ;
             text-align: center;
             color: black;
             letter-spacing: 5px;
@@ -681,26 +685,27 @@ body {
         p {
 
             font: {
-                family:'Jost', sans-serif;
+                family: 'Jost', sans-serif;
                 size: 16px;
-                weight:bold;
-            };
+                weight: bold;
+            }
+
+            ;
 
             margin: {
                 left: 10px;
                 right: 10px;
                 top: 10px
-            };
+            }
+
+            ;
 
             padding: 10px;
             line-height: 35px;
             text-align: justify;
         }
-
     }
-
 }
-
 
 /* ----------------------------------------------------------MEDIA QUERIES SOBRE MI CON SASS--------------------------------------------------*/
 
@@ -737,10 +742,12 @@ body {
 
         h2 {
             font: {
-                family:'Zen Kaku Gothic Antique', sans-serif;
+                family: 'Zen Kaku Gothic Antique', sans-serif;
                 size: 20px;
-                weight:bold;
-            };
+                weight: bold;
+            }
+
+            ;
             color: black;
             letter-spacing: 4px;
             text-shadow: 2px 2px 7px #58585a;
@@ -751,10 +758,12 @@ body {
 
         .parrafoMedicina {
             font: {
-                family:'Jost', sans-serif;
+                family: 'Jost', sans-serif;
                 size: 15px;
-                weight:600;
-            };
+                weight: 600;
+            }
+
+            ;
             height: 100px;
             color: black;
             text-align: center;
@@ -788,7 +797,9 @@ body {
                         image: url(../imagenes/giphyguasha.gif);
                         size: cover;
                         position: center;
-                    };
+                    }
+
+                    ;
                     width: 100%;
                     height: 400px;
                     margin-left: 20px;
@@ -799,7 +810,9 @@ body {
                         image: url(../imagenes/giphyreflexologia.gif);
                         size: cover;
                         position: center;
-                    };
+                    }
+
+                    ;
                     width: 100%;
                     height: 400px;
                     margin-left: 20px;
@@ -810,7 +823,9 @@ body {
                         image: url(../imagenes/giphyacupuntura.gif);
                         size: cover;
                         position: center;
-                    };
+                    }
+
+                    ;
                     width: 100%;
                     height: 400px;
                     margin-left: 20px;
@@ -818,10 +833,12 @@ body {
 
                 .cajaimagenizquierda5 {
                     background: {
-                        image:  url(../imagenes/giphyqigong.gif);
+                        image: url(../imagenes/giphyqigong.gif);
                         size: cover;
                         position: center;
-                    };
+                    }
+
+                    ;
                     width: 100%;
                     height: 400px;
                     margin-left: 20px;
@@ -842,10 +859,12 @@ body {
 
                 .h3derecha {
                     font: {
-                        family:'Encode Sans SC', sans-serif;
+                        family: 'Encode Sans SC', sans-serif;
                         size: 25px;
-                        weight:bold;
-                    };
+                        weight: bold;
+                    }
+
+                    ;
                     color: black;
                     text-align: center;
                     text-shadow: 2px 2px 7px #4b4763;
@@ -857,8 +876,10 @@ body {
                     font: {
                         family: 'Jost', sans-serif;
                         size: 16px;
-                        weight:900;
-                    };
+                        weight: 900;
+                    }
+
+                    ;
                     text-align: center;
                     color: black;
                     letter-spacing: 2px;
@@ -883,10 +904,12 @@ body {
 
                 .h3izquierda {
                     font: {
-                        family:'Encode Sans SC', sans-serif;
+                        family: 'Encode Sans SC', sans-serif;
                         size: 25px;
-                        weight:bold;
-                    };
+                        weight: bold;
+                    }
+
+                    ;
                     color: black;
                     text-align: center;
                     text-shadow: 2px 2px 7px #4b4763;
@@ -896,10 +919,12 @@ body {
 
                 .parrafos {
                     font: {
-                        family:'Jost', sans-serif;
+                        family: 'Jost', sans-serif;
                         size: 16px;
-                        weight:900;
-                    };
+                        weight: 900;
+                    }
+
+                    ;
 
                     text-align: center;
                     color: black;
@@ -924,7 +949,9 @@ body {
                         image: url(../imagenes/giphyventosas.gif);
                         size: cover;
                         position: center;
-                    };
+                    }
+
+                    ;
                     width: 100%;
                     height: 400px;
                     margin-right: 20px;
@@ -935,7 +962,9 @@ body {
                         image: url(../imagenes/giphyauriculoterapia.gif);
                         size: cover;
                         position: center;
-                    };
+                    }
+
+                    ;
                     width: 100%;
                     height: 400px;
                     margin-right: 20px;
@@ -946,7 +975,9 @@ body {
                         image: url(../imagenes/giphymoxa.gif);
                         size: cover;
                         position: center;
-                    };
+                    }
+
+                    ;
                     width: 100%;
                     height: 400px;
                     margin-right: 20px;
@@ -979,7 +1010,7 @@ body {
         .cajaterapia {
             margin-bottom: -30px;
 
-            h2{
+            h2 {
                 font-size: 17px;
                 letter-spacing: 2px;
             }
@@ -1044,10 +1075,12 @@ body {
 
             h2 {
                 font: {
-                    family:'Zen Kaku Gothic Antique', sans-serif;
+                    family: 'Zen Kaku Gothic Antique', sans-serif;
                     size: 20px;
-                    weight:bold;
-                };
+                    weight: bold;
+                }
+
+                ;
                 width: 100%;
                 text-align: center;
                 color: black;
@@ -1069,8 +1102,10 @@ body {
                 image: url(../imagenes/flores.jpg);
                 size: cover;
                 position: center;
-                repeat:no-repeat;
-            };
+                repeat: no-repeat;
+            }
+
+            ;
             width: 50%;
             height: 500px;
             z-index: 3;
@@ -1082,8 +1117,10 @@ body {
                 image: url(../imagenes/masajesonoro2.jpg);
                 size: cover;
                 position: center;
-                repeat:no-repeat;
-            };
+                repeat: no-repeat;
+            }
+
+            ;
             width: 50%;
             height: 500px;
             z-index: 3;
@@ -1098,10 +1135,12 @@ body {
 
             h3 {
                 font: {
-                    family:'Jost', sans-serif;
+                    family: 'Jost', sans-serif;
                     size: 18px;
-                    weight:bold;
-                };
+                    weight: bold;
+                }
+
+                ;
                 color: black;
                 text-align: center;
                 text-transform: uppercase;
@@ -1110,10 +1149,12 @@ body {
 
             p {
                 font: {
-                    family:'Jost', sans-serif;
+                    family: 'Jost', sans-serif;
                     size: 16px;
-                    weight:900;
-                };
+                    weight: 900;
+                }
+
+                ;
                 text-align: justify;
                 color: black;
                 letter-spacing: 2px;
@@ -1253,7 +1294,7 @@ body {
 /* -------------------------------------------------------MEDIA QUERIES PAGINA GALERIA CON SASS------------------------------------------------------*/
 
 @media only screen and (max-width: 1000px) {
-    .mainGaleria{
+    .mainGaleria {
         .contenedorGaleria {
             width: 100%;
             height: 100%;
@@ -1273,28 +1314,28 @@ body {
 }
 
 @media only screen and (max-width: 750px) {
-.mainGaleria{
-    .contenedorGaleria {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-areas:
-            "item1 item2"
-            "item3 item4"
-            "item5 item4"
-            "item5 item6"
-            "item7 item8"
-            "item9 item10"
-        ;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        margin: 10px 0px 30px 0px;
-        padding: 5px 5px 10px 5px;
+    .mainGaleria {
+        .contenedorGaleria {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-areas:
+                "item1 item2"
+                "item3 item4"
+                "item5 item4"
+                "item5 item6"
+                "item7 item8"
+                "item9 item10"
+            ;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            margin: 10px 0px 30px 0px;
+            padding: 5px 5px 10px 5px;
+        }
+
     }
 
-}
-  
 }
 
 /* -------------------------------------------------------------CONTACTO CON SASS-------------------------------------------------------------*/
@@ -1308,15 +1349,20 @@ body {
     .contenedorformydatos {
         background: {
             color: $celeste;
-            image:  url(../imagenes/fondocara5.jpg);
+            image: url(../imagenes/fondocara5.jpg);
             size: contain;
             position: left;
-            repeat:no-repeat;
-        };
+            repeat: no-repeat;
+        }
+
+        ;
+
         padding: {
             top: 30px;
             bottom: 30px
-        };
+        }
+
+        ;
         display: flex;
         align-items: center;
         height: 100%;
@@ -1338,10 +1384,12 @@ body {
 
                 h2 {
                     font: {
-                        family:'Jost', sans-serif;
+                        family: 'Jost', sans-serif;
                         size: 25px;
-                        weight:bold;
-                    };
+                        weight: bold;
+                    }
+
+                    ;
                     color: black;
                     letter-spacing: 2px;
                     margin-bottom: 40px;
@@ -1350,22 +1398,26 @@ body {
 
                 input {
                     font: {
-                        family:'Jost', sans-serif;
+                        family: 'Jost', sans-serif;
                         size: 13px;
-                        weight:bold;
-                    };
+                        weight: bold;
+                    }
+
+                    ;
                     width: 100%;
                     text-align: center;
-                    color: black; 
+                    color: black;
                     letter-spacing: 2px;
                 }
 
                 textarea {
                     font: {
-                        family:'Jost', sans-serif;
+                        family: 'Jost', sans-serif;
                         size: 13px;
-                        weight:bold;
-                    };
+                        weight: bold;
+                    }
+
+                    ;
                     width: 100%;
                     text-align: center;
                     color: black;
@@ -1373,7 +1425,7 @@ body {
                     padding-top: 10px;
                     padding-bottom: 10px;
                     border: none;
-                    border-bottom: 1px solid black;  
+                    border-bottom: 1px solid black;
                 }
 
                 .forminput {
@@ -1396,8 +1448,10 @@ body {
                     .inputbotones {
                         font: {
                             size: 12px;
-                            weight:bold;
-                        };
+                            weight: bold;
+                        }
+
+                        ;
                         color: black;
                         text-shadow: 2px 2px 5px $footer;
                         font-weight: bold;
@@ -1407,6 +1461,7 @@ body {
                         border: 1px solid black;
                         box-shadow: -2px 2px 6px #303136;
                         border-radius: 5px;
+
                         &:hover {
                             background-color: $body;
                         }
@@ -1417,9 +1472,11 @@ body {
 
         .redesydatos {
             margin: {
-               right: 60px;
-               left: 100px;
-            };
+                right: 60px;
+                left: 100px;
+            }
+
+            ;
             background-color: rgba(179, 184, 194, 0.7);
             width: 100%;
             height: min-content;
@@ -1432,10 +1489,12 @@ body {
 
             .redesydatos__p1 {
                 font: {
-                    family:'Jost', sans-serif;
+                    family: 'Jost', sans-serif;
                     size: 15px;
-                    weight:bolder;
-                };
+                    weight: bolder;
+                }
+
+                ;
                 color: black;
                 letter-spacing: 2px;
                 padding: 20px 20px 4px 20px;
@@ -1458,19 +1517,23 @@ body {
 
                 .redesydatos__p2 h3 {
                     font: {
-                        family:'Jost', sans-serif;
+                        family: 'Jost', sans-serif;
                         size: 22px;
-                        weight:bold;
-                    };
+                        weight: bold;
+                    }
+
+                    ;
                     letter-spacing: 2px;
                 }
-                
+
                 .parrafomensaje {
                     font: {
-                        family:'Jost', sans-serif;
+                        family: 'Jost', sans-serif;
                         size: 14px;
-                        weight:900;
-                    };
+                        weight: 900;
+                    }
+
+                    ;
                     letter-spacing: 2px;
                     line-height: 25px;
                     text-align: center;
@@ -1522,10 +1585,12 @@ body {
 
                 .redesydatos__p1 {
                     font: {
-                        family:'Jost', sans-serif;
+                        family: 'Jost', sans-serif;
                         size: 10px;
-                        weight:bolder;
-                    };
+                        weight: bolder;
+                    }
+
+                    ;
                     color: black;
                     letter-spacing: 2px;
                     padding: 20px 20px 4px 20px;
@@ -1538,6 +1603,7 @@ body {
                             font-size: 12px;
                         }
                     }
+
                     .redesydatos__p2 h3 {
                         padding-top: 10px;
                     }
@@ -1653,4 +1719,3 @@ footer {
         font-size: 8px;
     }
 }
-
